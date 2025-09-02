@@ -1,0 +1,5 @@
+.lista-usuarios {
+  list-style-type: none; /* Esto remueve las viñetas */
+  padding: 0; /* Esto remueve el padding predeterminado del navegador */
+  margin: 0;  /* Esto remueve el margin predeterminado del navegador */
+}
