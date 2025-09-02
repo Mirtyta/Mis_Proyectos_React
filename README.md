@@ -1,10 +1,16 @@
 # Mis Proyectos y Ejercicios de React
 
-¡Bienvenido/a a mi repositorio de proyectos de React! Aquí encontrarás una colección de mis trabajos y ejercicios del curso de programación de **Talento Tech React**.
+¡Bienvenido/a a mi repositorio de proyectos de React! Aquí encontrarás una colección de mis trabajos y ejercicios del curso de programación de **Talento Tech ReactJS**.
 
 Este repositorio sirve como un portafolio de mis habilidades en desarrollo front-end con React.
 
-## Tabla de Contenidos
+## 📁 Organización del Repositorio
+
+Para mantener un orden claro y modular, cada proyecto y ejercicio se encuentra en una **carpeta independiente** dentro del directorio raíz. Esta estructura permite trabajar en un proyecto a la vez y facilita la navegación para cualquier persona que visite el repositorio.
+
+---
+
+## 📝 Tabla de Contenidos
 
 1.  [Proyectos](#proyectos)
 2.  [Tecnologías Utilizadas](#tecnologias-utilizadas)
@@ -14,11 +20,8 @@ Este repositorio sirve como un portafolio de mis habilidades en desarrollo front
 
 ### Proyectos
 
-#### Proyecto-01: Lista de Usuarios y Componentes Básicos
-
-* **Descripción:** Un proyecto inicial centrado en los fundamentos de React. Incluye la creación y composición de componentes, el uso de props y el manejo de estilos.
-* **Funcionalidad:** Muestra una lista de usuarios, botones interactivos y un título centrado en la página.
-* **Tecnologías:** React, JSX, CSS.
+* **[Proyecto-01: Lista de Usuarios y Componentes Básicos](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Proyecto-01)**
+    * **Descripción:** Un proyecto inicial centrado en los fundamentos de React. Incluye la creación y composición de componentes, el uso de props y el manejo de estilos.
 
 ---
 
@@ -31,7 +34,7 @@ Este repositorio sirve como un portafolio de mis habilidades en desarrollo front
 
 ---
 
-### Como Usar estos Proyectos
+### Como Usar estos Proyectos  
 
 Para ejecutar cualquiera de los proyectos en este repositorio, sigue estos sencillos pasos:
 
