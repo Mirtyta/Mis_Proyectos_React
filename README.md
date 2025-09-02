@@ -6,9 +6,9 @@ Este repositorio sirve como un portafolio de mis habilidades en desarrollo front
 
 ## Tabla de Contenidos
 
-1.  [Proyecto-01](#proyectos)
-2.  [Tecnologías Utilizadas](#Tecnologías-Utilizadas)
-3.  [Cómo Usar estos Proyectos](#Cómo-Usar-estos-Proyectos)
+1.  [Proyectos](#proyectos)
+2.  [Tecnologías Utilizadas](#tecnologias-utilizadas)
+3.  [Cómo Usar estos Proyectos](#como-usar-estos-proyectos)
 
 ---
 
@@ -22,7 +22,7 @@ Este repositorio sirve como un portafolio de mis habilidades en desarrollo front
 
 ---
 
-### Tecnologías Utilizadas
+### Tecnologias Utilizadas
 
 * **React:** Biblioteca de JavaScript para la construcción de interfaces de usuario.
 * **Vite:** Herramienta de construcción para desarrollo front-end moderno.
@@ -31,7 +31,7 @@ Este repositorio sirve como un portafolio de mis habilidades en desarrollo front
 
 ---
 
-### Cómo Usar estos Proyectos
+### Como Usar estos Proyectos
 
 Para ejecutar cualquiera de los proyectos en este repositorio, sigue estos sencillos pasos:
 
