@@ -1,4 +1,4 @@
-# Mis Proyectos y Ejercicios de React
+# Mis Ejercicios de React
 
 ¡Bienvenido/a a mi repositorio de proyectos de React! Aquí encontrarás una colección de mis trabajos y ejercicios del curso de programación de **Talento Tech ReactJS**.
 
@@ -6,22 +6,26 @@ Este repositorio sirve como un portafolio de mis habilidades en desarrollo front
 
 ## 📁 Organización del Repositorio
 
-Para mantener un orden claro y modular, cada proyecto y ejercicio se encuentra en una **carpeta independiente** dentro del directorio raíz. Esta estructura permite trabajar en un proyecto a la vez y facilita la navegación para cualquier persona que visite el repositorio.
+Para mantener un orden claro y modular, cada ejercicio se encuentra en una **carpeta independiente** dentro del directorio raíz. Esta estructura permite trabajar en un proyecto a la vez y facilita la navegación para cualquier persona que visite el repositorio.
 
 ---
 
 ## 📝 Tabla de Contenidos
 
-1.  [Proyectos](#proyectos)
+1.  [Ejercicios](#ejercicios)
 2.  [Tecnologías Utilizadas](#tecnologias-utilizadas)
 3.  [Cómo Usar estos Proyectos](#como-usar-estos-proyectos)
 
 ---
 
-### Proyectos
+### Ejercicios
 
-* **[Proyecto-01: Lista de Usuarios y Componentes Básicos](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Proyecto-01)**
-    * **Descripción:** Un proyecto inicial centrado en los fundamentos de React. Incluye la creación y composición de componentes, el uso de props y el manejo de estilos.
+* **[Ejercicio-01: Lista de Usuarios y Componentes Básicos](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Ejercicio-01)**
+    * **Descripción:** Un proyecto inicial centrado en los fundamentos de React. Incluye la creación y composición de componentes, el uso de props y el manejo de estilos. ***(ver consigna.md)***
+
+---
+* **[Ejercicio-02: Array y Componente Tarjeta](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Ejercicio-02)**
+    * **Descripción:** Crea un componente que reciba un array de productos como prop y los muestre en una lista ordenada, y un componente Tarjeta que reciba props para mostrar un título, una descripción y un botón personalizado. ***(ver consigna.md)***
 
 ---
 
