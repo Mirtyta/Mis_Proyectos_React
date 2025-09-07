@@ -1,4 +1,4 @@
-# Extesiones para Visual Studio Code:
+# Extensiones para Visual Studio Code:
 
 Las extensiones de VS Code son la clave para tener una experiencia de desarrollo fluida y eficiente con React.
 

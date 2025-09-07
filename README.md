@@ -14,11 +14,11 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
 
 1.  [Ejercicios](#ejercicios)
 2.  [Tecnologías Utilizadas](#tecnologias-utilizadas)
-3.  [Instalacion y creación de proyectos en vite](https://github.com/Mirtyta/Mis_Proyectos_React/Instalacion-y-creacion-de-proyectos-en-vite.md)
-4.  [Crear Proyecto vite en VS Code](https://github.com/Mirtyta/Mis_Proyectos_React/crear-proyecto-vite-desde-vscode.md)
-5.  [Extensiones para React VS Code](https://github.com/Mirtyta/Mis_Proyectos_React/extensiones-para-vscode.md)
-6.  [Subir proyecto a GitHub](https://github.com/Mirtyta/Mis_Proyectos_React/subir-proyecto-a-github.md)
-7.  [Guía MarkDown](guia-md.md)
+3.  [Instalacion y creación de proyectos en vite](https://github.com/Mirtyta/Mis_Proyectos_React/blob/main/Instalacion-y-creacion-de-proyectos-en-vite.md)
+4.  [Crear Proyecto vite en VS Code](https://github.com/Mirtyta/Mis_Proyectos_React/blob/main/crear-proyecto-vite-desde-vscode.md)
+5.  [Extensiones para React VS Code](https://github.com/Mirtyta/Mis_Proyectos_React/blob/main/extensiones-para-vscode.md)
+6.  [Subir proyecto a GitHub](https://github.com/Mirtyta/Mis_Proyectos_React/blob/main/subir-proyecto-a-github.md)
+7.  [Guía MarkDown](https://github.com/Mirtyta/Mis_Proyectos_React/blob/main/guia-md.md)
 8.  [Cómo Usar estos Proyectos](#como-usar-estos-proyectos)
 
 ---
