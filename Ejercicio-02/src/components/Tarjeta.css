@@ -1,0 +1,32 @@
+/* Contenedor de la tarjeta */
+.tarjeta {
+  background-color: #ffffff;           /* Fondo blanco */
+  border-radius: 12px;                 /* Esquinas redondeadas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Sombra suave */
+  padding: 20px;                       /* Espacio interno */
+  margin: 30px auto;                   /* Separación entre tarjetas y centrado horizontal */
+  max-width: 300px;                     /* Ancho máximo */
+  text-align: center;                   /* Centrar el contenido dentro */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animación suave al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta */
+.tarjeta:hover {
+  transform: translateY(-5px);         /* Levanta un poquito la tarjeta */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* Sombra más pronunciada */
+}
+
+/* Estilo para el título de la tarjeta */
+.tarjeta h2 {
+  font-size: 1.5rem;                   /* Tamaño de fuente del título */
+  color: #333;                          /* Color oscuro */
+  margin-bottom: 10px;                  /* Espacio debajo del título */
+}
+
+/* Estilo para la descripción */
+.tarjeta p {
+  font-size: 1rem;                      /* Tamaño normal de texto */
+  color: #555;                          /* Gris medio */
+  margin-bottom: 15px;                  /* Espacio debajo del párrafo */
+  line-height: 1.4;                     /* Altura de línea para mejor lectura */
+}

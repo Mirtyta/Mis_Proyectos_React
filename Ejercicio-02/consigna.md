@@ -5,7 +5,7 @@
 
 **Ejemplo de array:**
 
-const productos = ['Manzanas', 'Peras', 'Naranjas'];
+const productos = `['Manzanas', 'Peras', 'Naranjas']`;
 
 `2. ` Crea un componente Tarjeta que reciba props para mostrar un título, una descripción y un botón personalizado. 
 
