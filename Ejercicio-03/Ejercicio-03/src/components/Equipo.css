@@ -1,0 +1,81 @@
+/* Estilos generales para la sección */
+section#equipo {    
+  background: #0D0628 url("hreact.png") no-repeat  top right/auto; /* Imagen de fondo centrada y que cubre todo */
+}
+/* Contenedor de todas las tarjetas */
+.containerequipo {
+  position: relative;  /* Posicionamiento relativo para elementos hijos */
+  width: 100%;          /* Ancho máximo del contenedor */
+  display: flex;            /* Usa flexbox para organizar las tarjetas */
+  flex-wrap: wrap;          /* Permite que las tarjetas bajen de fila si no caben */
+  justify-content: center;  /* Centra las tarjetas horizontalmente */
+  gap: 10px;                /* Espacio de 10px entre cada tarjeta */
+}
+
+/* Tarjeta individual - BASE AZUL */
+.containerequipo .card {
+  position: relative;       /* Permite posicionar elementos hijos */
+  width: 250px;             /* Ancho fijo de la tarjeta */
+  height: 200px;            /* Alto fijo de la tarjeta */
+  border-radius: 12px;      /* Esquinas redondeadas */
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5); /* Sombra para profundidad */
+  cursor: pointer;          /* Cursor pointer al pasar sobre la tarjeta */
+  background: #fff;      /* Fondo blanco para la tarjeta */
+  margin: 30px 10px;            /* Espaciado alrededor de la tarjeta */
+  padding: 20px 15px;            /* Espaciado interno de la tarjeta */
+  display: flex;            /* Flexbox para organizar contenido */
+  flex-direction: column;   /* Apila elementos verticalmente */ 
+  transition: 0.3s ease-in-out;     /* Transición suave para efectos hover */
+}
+/* Contenedor de la imagen */
+.containerequipo .card .imgbox {
+  position: relative;       /* Posicionamiento absoluto dentro de la tarjeta */
+  width: 170px;             /* Ocupa todo el ancho de la tarjeta */
+  height: 170px;            /* ESTADO INICIAL: Ocupa toda la altura (250px) */
+  top: -60px;                /* Ajuste para centrar la imagen */
+  left: 20px;               /* Ajuste para centrar la imagen */
+  z-index: 1;               /* Se coloca encima del contenido */
+  border-radius: 50%;      /* Esquinas redondeadas */
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2); /* Sombra para profundidad */
+}
+.containerequipo .card:hover .imgbox {
+  top: -130px;               /* Ajuste para centrar la imagen */
+  transition: 0.3s ease-in-out; /* Transición suave para el cambio de tamaño */
+}
+.containerequipo .card  .imgbox img {
+    max-width: 100%;              /* La imagen ocupa todo el ancho del contenedor */
+    border-radius: 50%;      /* Esquinas redondeadas */
+}
+/* Contenido con nombre y rol - CAPA INFERIOR */
+.containerequipo .card .content {
+  position: relative;       /* Posicionamiento absoluto dentro de la tarjeta */
+  margin-top: -130px;   /* Ajuste para que el contenido esté debajo de la imagen */
+  padding: 10px 15px;            /* Espaciado interno */
+  text-align: center;       /* Centra el texto */
+  color: #111;              /* Color oscuro para el texto */
+  background: #fff;
+  visibility: hidden; /* Oculto por defecto */
+  opacity: 0;        /* Transparente por defecto */
+  transition: 0.3s ease-in-out; /* Transición suave para visibilidad y opacidad */
+}
+.containerequipo .card:hover .content {
+  visibility: visible; /* Visible al hacer hover */
+  opacity: 1;         /* Opaco al hacer hover */
+  transition-delay: 0.3s; /* Retraso para que aparezca después del hover */
+}
+/* Estilos para el enlace */
+.containerequipo .card .content a {
+  color: #4a90e2;           /* Color azul igual al fondo de la tarjeta */
+  text-decoration: none;    /* Sin subrayado */
+  font-size: 12px;          /* Tamaño de fuente pequeño */
+  font-weight: 500;         /* Peso de fuente medio */
+  padding: 4px 12px;        /* Espaciado interno */
+  border: 1px solid #4a90e2; /* Borde azul */
+  border-radius: 12px;      /* Esquinas redondeadas */
+  transition: all 0.3s ease; /* Transición suave */
+  display: inline-block;    /* Para que el padding funcione correctamente */
+}
+.containerequipo .card .content a:hover {
+  background: #4a90e2;      /* Fondo azul al hacer hover */
+  color: #fff;              /* Texto blanco al hacer hover */
+}

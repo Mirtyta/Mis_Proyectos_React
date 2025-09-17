@@ -1,0 +1,94 @@
+/* 🎨 Estilos del footer */
+.footer {
+  background: #1e1e2f; /* Fondo oscuro */
+  color: #f5f5f5;      /* Texto claro */
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Para que en móvil se apile */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col {
+  flex: 1 1 250px; /* Se adaptan al espacio */
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff4ecb; /* Color llamativo */
+}
+
+.footer-frase {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.footer-col h3 {
+  margin-bottom: 1rem;
+  color: #ffd700; /* Amarillo vibrante */
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ff4ecb;
+}
+
+/* 📝 Estilos del formulario */
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-form input,
+.footer-form textarea {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  resize: none;
+}
+
+.footer-form button {
+  background: #ff4ecb;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.footer-form button:hover {
+  background: #e03ca7;
+}
+
+/* Franja inferior */
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}

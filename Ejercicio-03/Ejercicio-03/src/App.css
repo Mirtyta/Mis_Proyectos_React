@@ -1,0 +1,100 @@
+/* =========================
+  app.css - GLOBAL
+   ========================= */
+
+/* Fuente y reset general */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700,300,100');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------------
+  Estilos generales para títulos
+   ------------------------ */
+h1,h2,h3,h4,h5,h6 {
+  color: #333;            /* Color uniforme para todos los títulos */
+  margin-top: 20px;
+  margin-bottom: 20px;    /* Espaciado vertical homogéneo */
+  line-height: 1.3;       /* Altura de línea para que respire */
+  text-align: center;      /* Alineación uniforme */
+}
+
+.titulopersonalizado {
+  color: #333;            /* Color uniforme para todos los títulos */
+  margin-top: 60px;
+  margin-bottom: 20px;    /* Espaciado vertical homogéneo */
+  line-height: 1.3;       /* Altura de línea para que respire */
+  text-align: center;      /* Alineación uniforme */
+}
+
+/* ------------------------
+  Estilos generales para párrafos
+   ------------------------ */
+p {
+  color: #555;            /* Color uniforme para todos los párrafos */
+  margin-bottom: 15px;    /* Espacio entre párrafos */
+  line-height: 1.6;       /* Espacio interno para mejor lectura */
+}
+
+/* ------------------------
+  Estilos generales para listas
+   ------------------------ */
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* ------------------------
+  Header
+   ------------------------ */
+.fondoheader {
+  height: 100px;               /* Solo el alto del header */
+  background: rgba(0, 0, 0, 0.8);
+}
+.espacio {
+  padding: 100px 20px;          /* Espaciado interno agregado por el menu fijo asi el menu no tapa el header*/
+}
+/* ------------------------
+  Secciones - alto mínimo de pantalla
+   ------------------------ */
+section {
+  min-height: 100vh;          /* Mínimo alto = alto de ventana */
+  padding: 80px 20px;          /* Espaciado interno estándar */
+}
+/* ------------------------
+  Fondo Intereses
+   ------------------------ */
+.fondointereses {
+  background: url("https://picsum.photos/800/500?1") no-repeat center/cover;
+  background-attachment: fixed;
+  /* No se fija al hacer scroll */
+}
+.seccion{
+  min-height: 60vh;          /* Mínimo alto = alto de ventana */
+  padding: 80px 20px;  
+}
+.logo{
+  width: 50px;
+}
+
+.logo-pequeno {
+  display: inline-block;   /* Hace que se comporte como texto, pero permite transformaciones */
+  vertical-align: middle;  /* Centra verticalmente con el texto del párrafo */
+  height: 20px;             /* Ajusta tamaño según la línea de texto */
+  margin: 0;   
+  padding: 5px;  /* Espacio alrededor para que no quede muy justo */
+  will-change: transform;
+  transition: filter 0.3s ease-in-out;
+}
+
+.logo-pequeno:hover {
+  filter: drop-shadow(0px 0px 20px rgba(252, 250, 250, 0.8));
+}

@@ -1,0 +1,18 @@
+/* Estilos para la tarjeta de proyecto */
+.proyecto {
+  display: flex;                      /* Flexbox para organizar contenido */
+  flex-direction: column;               /* Apila elementos verticalmente */
+  align-items: center;               /* Centra horizontalmente */
+  justify-content: stretch;           /* Centra verticalmente */
+  background-color: #bccbf5;           /* Fondo azul claro */
+  border-radius: 12px;                 /* Esquinas redondeadas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Sombra suave */
+  max-width: 300px;                     /* Ancho máximo */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animación suave al pasar el mouse */
+  padding: 40px;  
+  margin: 30px;                        /* Espaciado alrededor de la tarjeta */
+}
+.proyecto:hover {
+  transform: translateY(-5px);         /* Levanta un poquito la tarjeta */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* Sombra más pronunciada */
+}
