@@ -5,10 +5,11 @@
 Abrí la terminal en la carpeta donde quieras tu proyecto.
 ***(Prestar mucha atención en qué carpeta estamos)***
 
+
 ` 1. ` Corré este comando:
 
-```bash
 
+```bash
 npm create vite@latest mi-proyecto
 ```
 
@@ -19,6 +20,7 @@ Nombre del proyecto → escribí el que quieras (por ejemplo mi-proyecto).
 *Nota: La convención de nomenclatura más común y recomendada para proyectos web en JavaScript es usar kebab-case (todo en minúsculas, separado por guiones).*
 
 Framework → elegí React.
+
 
 Variante → elegí JavaScript (o TypeScript si querés).
 
