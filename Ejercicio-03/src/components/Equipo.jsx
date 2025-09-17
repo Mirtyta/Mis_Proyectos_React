@@ -1,12 +1,16 @@
 import React from "react";
+import Silvia from "../assets/silvia.png";
+import Luis from "../assets/luis.png";
+import Matias from "../assets/matias.png";
+import Sabrina from "../assets/sabrina.png";
 import "./Equipo.css";
 
 const Equipo = () => {
   const equipo = [
-    { nombre: "Silvia", rol: "Product Owner", imagen: "silvia.png" },
-    { nombre: "Luis", rol: "Diseñador UX/UI", imagen: "luis.png" },
-    { nombre: "Matías", rol: "Desarrollador", imagen: "matias.png" },
-    { nombre: "Sabrina", rol: "Desarrolladora", imagen: "sabrina.png" },
+    { nombre: "Silvia", rol: "Product Owner", imagen: Silvia },
+    { nombre: "Luis", rol: "Diseñador UX/UI", imagen: Luis },
+    { nombre: "Matías", rol: "Desarrollador", imagen: Matias },
+    { nombre: "Sabrina", rol: "Desarrolladora", imagen: Sabrina },
   ];
 
   return (

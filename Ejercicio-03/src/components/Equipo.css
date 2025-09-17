@@ -1,6 +1,6 @@
 /* Estilos generales para la sección */
 section#equipo {    
-  background: #0D0628 url("hreact.png") no-repeat  top right/auto; /* Imagen de fondo centrada y que cubre todo */
+  background: #0D0628 url("../assets/hreact.png") no-repeat  top right/auto; /* Imagen de fondo centrada y que cubre todo */
 }
 /* Contenedor de todas las tarjetas */
 .containerequipo {

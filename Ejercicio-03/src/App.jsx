@@ -1,16 +1,24 @@
 // archivo App.jsx
-
 // ✅ Importamos dependencias y componentes
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import React from 'react';
+// ❌ Esta línea es la que causa el problema. La eliminamos.
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// ✅ Usamos HashRouter en su lugar para que las rutas funcionen en GitHub Pages.
+import { HashRouter, Routes, Route } from 'react-router-dom'; 
+
 import { useEffect } from "react";
+import { useLocation } from 'react-router-dom'; // Agregamos este import, ya que usas 'useLocation'
+
 import Menu from "./components/MenuBootstrap";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Ejercicio from "./components/Ejercicio";
 import Equipo from "./components/Equipo";
 import Proyectos from "./components/Proyectos";
 import Intereses from "./components/Intereses";
+import Footer from "./components/Footer";
+
 import Recursos from "./pages/Recursos";
+
 import './App.css';
 
 // -----------------------------------------------
@@ -57,7 +65,7 @@ const SeccionIntereses = () => (
 );
 
 // 👉 Página principal (home) que junta todo
-const PaginaPrincipal = () => {
+const Home = () => {
   // 🔹 Hook useLocation para leer el "hash" de la URL
   const location = useLocation();
 
@@ -91,15 +99,15 @@ const PaginaPrincipal = () => {
 // -----------------------------------------------
 function App() {
   return (
-    <Router>
+    <HashRouter>
       {/* El menú se mantiene siempre visible fuera de las rutas */}
       <Menu />
       {/* Las rutas se gestionan con <Routes> y <Route> */}
       <Routes>
-        <Route path="/" element={<PaginaPrincipal />} />
+        <Route path="/" element={<Home />} />
         <Route path="/recursos" element={<Recursos />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 

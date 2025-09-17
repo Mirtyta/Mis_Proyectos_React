@@ -33,6 +33,7 @@ const Footer = () => {
 					{/* Columna izquierda: identidad */}
 					<Col md={3} className="mb-5">
 						<h3 className="d-flex align-items-center gap-2">
+							<hr />
 							<img
 								src={imagelogo}
 								className="img-fluid rounded shadow logo-pequeno"
@@ -64,6 +65,7 @@ const Footer = () => {
 					{/* Columna Centro: formulario */}
 					<Col md={5} className="mb-3">
 						<h3>📩 Contacto</h3>
+						<hr />
 						<Form>
 							{/* Fila Nombre + Email */}
 							<Row className="mb-3">
@@ -122,6 +124,7 @@ const Footer = () => {
 					{/* Columna derecha: recursos */}
 					<Col md={3} className="mb-3">
 						<h3>📚 Recursos</h3>
+						<hr />
 						<ul className="list-unstyled">
 							<li>
 								<a href="/recursos?slide=0" className="text-light text-decoration-none">
