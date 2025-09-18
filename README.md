@@ -34,8 +34,8 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
 
 
 ---
-* **[Ejercicio-03: reutilizar componentes, manejar props y diseñar interfaces dinámicas](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Ejercicio-03/Ejercicio-03)**
-    * **Descripción:** Crea 3 componente: 1, con un array de equipo desarrollo, otro con proyectos destacados, y otro para elegir intereses, reutilizacion de componentes vistos, organizacion modular y hooks. *[(ver consigna.md)](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Ejercicio-03/Ejercicio-03consigna.md)*
+* **[Ejercicio-03: reutilizar componentes, manejar props y diseñar interfaces dinámicas](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Ejercicio-03)**
+    * **Descripción:** Crea 3 componente: 1, con un array de equipo desarrollo, otro con proyectos destacados, y otro para elegir intereses, reutilizacion de componentes vistos, organizacion modular y hooks. *[(ver consigna.md)](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Ejercicio-03/consigna.md)*
 
 
 ---

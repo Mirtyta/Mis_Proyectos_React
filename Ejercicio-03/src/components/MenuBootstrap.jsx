@@ -2,7 +2,7 @@
 
 // ✅ Importamos dependencias necesarias de React y React Router Dom
 import { useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import imagelogo from "../assets/logo.png";
 
@@ -66,28 +66,19 @@ function ScrollMenu() {
     >
       <Container>
         {/* Usamos <Link> para que el logo nos lleve a la página de inicio */}
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand onClick={() => handleNavigation("inicio")}>
           <img src={imagelogo} className="img-fluid rounded shadow logo" alt="Logo" />
           <small>Mis Ejercicios</small>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            {/* Usamos Nav.Link de Bootstrap con el componente Link de React Router.
-                Esto nos permite tener el estilo de Nav.Link pero con la funcionalidad de Link.
-            */}
-            <Nav.Link as={Link} to="/">
-              Inicio
-            </Nav.Link>
-            {/* Para las secciones, usamos `onClick` con nuestra función `handleNavigation` */}
+             {/* Para las secciones, usamos `onClick` con nuestra función `handleNavigation` */}
+            <Nav.Link onClick={() => handleNavigation("inicio")}>Inicio</Nav.Link>          
             <Nav.Link onClick={() => handleNavigation("equipo")}>Equipo</Nav.Link>
             <Nav.Link onClick={() => handleNavigation("proyectos")}>Proyectos</Nav.Link>
             <Nav.Link onClick={() => handleNavigation("intereses")}>Intereses</Nav.Link>
             <Nav.Link onClick={() => handleNavigation("contacto")}>Contacto</Nav.Link>
-            {/* Agregamos el enlace a la página de Recursos 
-            <Nav.Link as={Link} to="/recursos">
-              Recursos
-            </Nav.Link>*/}
           </Nav>
         </Navbar.Collapse>
       </Container>
