@@ -13,30 +13,87 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
 ## 📝 Tabla de Contenidos
 
 1.  [Ejercicios](#ejercicios)
-2.  [Tecnologías Utilizadas](#tecnologias-utilizadas)
-3.  [Instalacion y creación de proyectos en vite](https://github.com/Mirtyta/Mis_Proyectos_React/blob/main/Instalacion-y-creacion-de-proyectos-en-vite.md)
-4.  [Crear Proyecto vite en VS Code](https://github.com/Mirtyta/Mis_Proyectos_React/blob/main/crear-proyecto-vite-desde-vscode.md)
-5.  [Extensiones para React VS Code](https://github.com/Mirtyta/Mis_Proyectos_React/blob/main/extensiones-para-vscode.md)
-6.  [Subir proyecto a GitHub](https://github.com/Mirtyta/Mis_Proyectos_React/blob/main/subir-proyecto-a-github.md)
-7.  [Guía MarkDown](https://github.com/Mirtyta/Mis_Proyectos_React/blob/main/guia-md.md)
-8.  [Cómo Usar estos Proyectos](#como-usar-estos-proyectos)
+2.  [Cuestionarios](#cuestionarios)
+
+---
+
+3.  [Tecnologías Utilizadas](#tecnologias-utilizadas)
+4.  [Instalacion y creación de proyectos en vite](./Informacion/Instalacion-y-creacion-de-proyectos-en-vite.md)
+5.  [Crear Proyecto vite en VS Code](./Informacion/crear-proyecto-vite-desde-vscode.md)
+6.  [Extensiones para React VS Code](./Informacion/extensiones-para-vscode.md)
+7.  [Subir proyecto a GitHub](./Informacion/subir-proyecto-a-github.md)
+8.  [Guía MarkDown](./Informacion/guia-md.md)
+9.  [Cómo Usar estos Proyectos](#como-usar-estos-proyectos)
+10. [Eventos en React y CamelCase](./Informacion/eventos-en-React-y-camelCase.md)
+11. [Props](./Informacion/props.md)
+12. [Página html con paleta de colores de mi ejercicio 4](./Informacion/preview.html)
 
 ---
 
 ### Ejercicios
 
-* **[Ejercicio-01: Lista de Usuarios y Componentes Básicos](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Ejercicio-01)**
-    * **Descripción:** Un proyecto inicial centrado en los fundamentos de React. Incluye la creación y composición de componentes, el uso de props y el manejo de estilos. *[(ver consigna.md)](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Ejercicio-01/Consigna.md)*
+* **[Ejercicio-01: Lista de Usuarios y Componentes Básicos](./Ejercicio-01/)**
+    * **Descripción:** Un proyecto inicial centrado en los fundamentos de React. Incluye la creación y composición de componentes, el uso de props y el manejo de estilos. *[(ver consigna.md)](./Ejercicio-01/Consigna.md)*
 
 ---
-* **[Ejercicio-02: Array y Componente Tarjeta](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Ejercicio-02)**
-    * **Descripción:** Crea un componente que reciba un array de productos como prop y los muestre en una lista ordenada, y un componente Tarjeta que reciba props para mostrar un título, una descripción y un botón personalizado. *[(ver consigna.md)](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Ejercicio-02/consigna.md)*
+* **[Ejercicio-02: Array y Componente Tarjeta](./Ejercicio-02)**
+    * **Descripción:** Crea un componente que reciba un array de productos como prop y los muestre en una lista ordenada, y un componente Tarjeta que reciba props para mostrar un título, una descripción y un botón personalizado. *[(ver consigna.md)](./Ejercicio-02/consigna.md)*
 
 
 ---
-* **[Ejercicio-03: reutilizar componentes, manejar props y diseñar interfaces dinámicas](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Ejercicio-03)**
-    * **Descripción:** Crea 3 componente: 1, con un array de equipo desarrollo, otro con proyectos destacados, y otro para elegir intereses, reutilizacion de componentes vistos, organizacion modular y hooks. *[(ver consigna.md)](https://github.com/Mirtyta/Mis_Proyectos_React/tree/main/Ejercicio-03/consigna.md)*
+* **[Ejercicio-03: reutilizar componentes, manejar props y diseñar interfaces dinámicas](./Ejercicio-03)**
+    * **Descripción:** Crea 3 componente: 1, con un array de equipo desarrollo, otro con proyectos destacados, y otro para elegir intereses, reutilizacion de componentes vistos, organizacion modular y hooks. *[(ver consigna.md)](./Ejercicio-03/Consigna.md)*
+    **Éste ejercicio fue desplegado en GitHubPages en [Ejercicio-03](https://mirtyta.github.io/Proyecto-React-con-Vite/)
 
+---
+* **Ejercicio-04: Crear carrito compra**
+    * **Descripción:** Tu tarea inicia crear una aplicación que permita a los usuarios agregar productos a un carrito de compras y visualizar la lista de productos seleccionados. *[(ver consigna.md)](./Ejercicio-04/Consigna.md)*
+
+---
+
+### Cuestionarios
+* **[Todos los Cuestionarios:](./Cuestionarios/)**
+    * Carpeta Principal con todos los Ejercicios en distintas carpetas indicando el nro de ejercicio, 01,02...
+
+---
+
+* **[Cuestionario Inicial:](./Cuestionarios/Introduccion.md)**
+    * Primer Cuestionario "Introducción"
+
+---
+
+* **[Cuestionario Clase-02 React:](./Cuestionarios/Clase-02-React.md)**
+    * Cuestionario "Clase-02 React - Habilita Clase-03 y Clase-04"
+
+---
+
+* **[Cuestionario Clase-04 React:](./Cuestionarios/Clase-04-React.md)**
+    * Cuestionario "Clase-04 React - Habilita Clase-05 y Clase-06"
+
+---
+
+* **Cuestionario Clase-06 React:** En Proceso - Aun no subido**
+    * Cuestionario "Clase-06 React - Habilita Clase-07 y Clase-08"
+
+---
+
+* **Cuestionario Clase-08 React:** En Proceso - Aun no subido**
+    * Cuestionario "Clase-08 React - Habilita Pre-Entrega Proyecto, Clase-09 y Clase-10"
+
+---
+
+* **Cuestionario Clase-10 React:** En Proceso - Aun no subido**
+    * Cuestionario "Clase-10 React - Habilita Clase-11 y Clase-12"
+
+---
+
+* **Cuestionario Clase-12 React:** En Proceso - Aun no subido**
+    * Cuestionario "Clase-12 React - Habilita Clase-13 y Clase-14"
+
+---
+
+* **Cuestionario Clase-14 React:** En Proceso - Aun no subido**
+    * Cuestionario "Clase-14 React - Habilita Clase-15 y Clase-16"
 
 ---
 ### Tecnologias Utilizadas
