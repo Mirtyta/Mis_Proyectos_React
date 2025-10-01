@@ -22,21 +22,21 @@ Tu tarea inicia crear una aplicación que permita a los usuarios agregar product
 
   * Crear un componente para mostrar los productos disponibles.✅
 
-  * Estado del Carrito✅
+  * Estado del Carrito
 
     *Usar useState para manejar el estado del carrito de compras.*
 
-  * Agregar Productos✅
+  * Agregar Productos
 
-    *Implementar un evento de clic para añadir productos al carrito.*✅
+    *Implementar un evento de clic para añadir productos al carrito.*
 
-  * Mostrar Carrito✅
+  * Mostrar Carrito
 
-  * Crear un componente para visualizar los productos seleccionados.✅
+  * Crear un componente para visualizar los productos seleccionados.
 
   * Crear un Layout del eCommerce ✅
 
-    *(Header, Footer, Main, Nav)*✅
+    *(Header, Footer, Main, Nav)*
 
 ---
 
@@ -44,23 +44,22 @@ Tu tarea inicia crear una aplicación que permita a los usuarios agregar product
 
   * Información de Productos ✅
 
-    *La lista debe incluir al menos nombre y precio de cada producto.*✅
+    *La lista debe incluir al menos nombre y precio de cada producto.*
 
-  * Actualización Dinámica✅
+  * Actualización Dinámica
 
-    *El estado del carrito debe actualizarse al agregar cada producto.*✅
+    *El estado del carrito debe actualizarse al agregar cada producto.*
 
-  * Carrito Vacío✅
+  * Carrito Vacío
 
-    *Mostrar un mensaje cuando no haya productos seleccionados.*✅
+    *Mostrar un mensaje cuando no haya productos seleccionados.*
 
 ---
 
 * **Desafío Adicional**
 
-  * Botón "Vaciar Carrito"✅
+  * Botón "Vaciar Carrito"
 
-    *Implementar una función para eliminar todos los productos seleccionados del carrito.*✅
-    **En mi caso cuando presiona el boton finalizar compra se vacia el carrito**
+    *Implementar una función para eliminar todos los productos seleccionados del carrito.*
 
 ** *He aqui la lista de almacén, es cómo cuando no tenemos nada en casa y tenemos que comprar de todo!, a trabajar!!*    

@@ -27,6 +27,9 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
 10. [Eventos en React y CamelCase](./Informacion/eventos-en-React-y-camelCase.md)
 11. [Props](./Informacion/props.md)
 12. [Página html con paleta de colores de mi ejercicio 4](./Informacion/preview.html)
+13. [Mi Componente Boton](./Informacion/mi-boton.md)
+14. [useState Carrito de Compras](./Informacion/useState-Carrito-Compras.md)
+
 
 ---
 
@@ -46,7 +49,7 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
     **Éste ejercicio fue desplegado en GitHubPages en [Ejercicio-03](https://mirtyta.github.io/Proyecto-React-con-Vite/)
 
 ---
-* **Ejercicio-04: Crear carrito compra**
+* **[Ejercicio-04: Crear carrito compra](./Ejercicio-04/)**
     * **Descripción:** Tu tarea inicia crear una aplicación que permita a los usuarios agregar productos a un carrito de compras y visualizar la lista de productos seleccionados. *[(ver consigna.md)](./Ejercicio-04/Consigna.md)*
 
 ---
@@ -72,13 +75,17 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
 
 ---
 
-* **Cuestionario Clase-06 React:** En Proceso - Aun no subido**
-    * Cuestionario "Clase-06 React - Habilita Clase-07 y Clase-08"
+* **[Cuestionario Clase-06 React:](./Cuestionarios/Clase-06-React.md)**
+    * Cuestionario "Clase-06 React - Habilita de la Clase-07 a la Clase-10"
 
 ---
 
-* **Cuestionario Clase-08 React:** En Proceso - Aun no subido**
-    * Cuestionario "Clase-08 React - Habilita Pre-Entrega Proyecto, Clase-09 y Clase-10"
+* **Cuestionario Clase-08 React:** No exite un cuestionario de la clase 8**
+
+---
+
+* **[Cuestionario de Autoevaluación - Pre entrega:](./Cuestionarios/Pre-entrega.md)**
+    * Éste cuestionario es más para saber que tanto pudieron hacer en su Pre-entrega, eso sólo ustedes pueden responder, peero.. yo les doy tips y recomendaciones por si algo no les cuadra.
 
 ---
 

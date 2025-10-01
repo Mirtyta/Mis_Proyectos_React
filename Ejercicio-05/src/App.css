@@ -1,0 +1,93 @@
+/* =========================
+  app.css - GLOBAL - se aplica a 
+  toda la app, es por eso que 
+  aqui esta el logo para que 
+  tenga acceso a todas las rutas
+   ========================= */
+
+/* Fuente y reset general */
+/* Utilizamos Poppins para el general, y 
+algunos títulos en Kaushan Script por las 
+letras de nuestro logo (Esto es sólo para 
+mi Pre-Entrega, no se corresponde con éste proyecto) */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+  font-size: 16px; 
+  /* defino el tamaño standart de mi letra lo manejo con em */
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #f0f0f0; 
+  /* Utilizo el blanco roto para el texto 😂 */
+  background: rgb(31, 26, 20, 0.9);
+  /* utilizo un negro roto para el texto queda mejor que negro full(cuestion de gustos */
+}
+:root {
+  max-width: 90%; /* Ahora ocupará el 90% del ancho de la pantalla */
+  margin: 0 auto; /* centrado */
+  text-align: center;
+  /*********************/
+  /* Paleta de colores */
+  /*********************/
+  --color-fondo: rgb(31, 26, 20);
+  --color-negrotr: rgba(0, 0, 0, 0.9);
+  --color-blanco: rgba(255,255,255,1);
+  --color-fondotr08: rgba(31, 26, 20, 0.8);
+  --color-fondotr06: rgba(31, 26, 20, 0.6);
+  --color-fondotr03: rgba(31, 26, 20, 0.3);
+  --color-fondotr01: rgba(31, 26, 20, 0.1);
+  --color-claro: rgb(247, 235, 212);
+  --color-oscuro: rgb(184, 75, 20);
+  --color-resaltado: rgb(247, 201, 110);
+  --color-resaltadotr03: rgba(247, 201, 110, 0.3);
+}
+
+.contenido {
+  margin: 0 auto;
+  box-shadow: 0 5px 15px var(--color-fondo);
+  background-color: var(--color-fondo) ;
+  min-height: 80vh;
+}
+
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 20px var(--color-resaltado)); 
+}
+
+.icono-interactivo {
+  cursor: pointer; /* Esto muestra la 'manito' al pasar el ratón */
+}
+.navbar-nav .nav-link.active {
+  /* ¡Estilo para el elemento ACTIVO! */
+  background-color: var(--color-resaltado); /* Color de fondo */
+  color: var(--color-fondo) !important; /* Color del texto (usa !important si Bootstrap lo está sobrescribiendo) */
+  border-radius: 4px; /* Opcional: bordes redondeados */
+}
+
+.navbar-nav .nav-link:not(.active):hover {
+  color: var(--color-resaltado) !important; /* texto primario al pasar el ratón */
+}
+.fondo-banner-carrito {
+  background: #000;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}

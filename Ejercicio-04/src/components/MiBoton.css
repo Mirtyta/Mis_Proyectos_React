@@ -1,0 +1,28 @@
+.boton {
+  display: inline-block; /* Evita que ocupe todo el ancho */
+  padding: 10px 20px;           /* Espacio interno del botón */
+  margin: 5px;                  /* Espacio externo */
+  border: none;                 /* Sin borde */
+  border-radius: 5px;           /* Esquinas redondeadas */
+  cursor: pointer;              /* Cursor cambia al pasar el mouse */
+  font-weight: 300;            /* Texto en light */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transiciones suaves al hacer hover */
+  color: var(--color-claro);
+  background: var(--color-oscuro);
+}
+.boton:hover {
+  transform: scale(1.05);       /* Aumenta un poco el tamaño al pasar el mouse */
+  box-shadow: 0 0 10px var(--color-resaltadotr03); /* Sombra suave */
+  color: var(--color-fondo);    /* aplico el color utilizando mi paleta en root */
+  background: var(--color-claro);
+}
+.boton:active {
+  transform: scale(1.05);       /* Aumenta un poco el tamaño al pasar el mouse */
+  box-shadow: 0 0 10px var(--color-resaltadotr03); /* Sombra suave */
+  color: var(--color-fondo);    /* aplico el color utilizando mi paleta en root */
+  background: var(--color-claro);
+}
+.boton-peque {
+  width: auto;     /* Ajusta al contenido */
+  min-width: 80px; /* Opcional: tamaño mínimo */
+}

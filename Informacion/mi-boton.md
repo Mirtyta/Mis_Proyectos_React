@@ -72,9 +72,12 @@ const Boton = ({
     </button>
   );
 };
-```
 
 export default Boton;
+
+```
+
+
 Cómo usar la nueva prop textColor
 Caso 1: Usando tu botón de carrito (texto claro sobre fondo oscuro)
 Aquí el textColor por defecto (#f0f0f0) funcionará bien.
@@ -100,4 +103,4 @@ JavaScript
     textColor="#1E1E2C" // ¡CLAVE: el texto será oscuro!
     style={{ backgroundColor: '#F0F0F0' }} // Le forzamos el fondo claro en línea
 />
-Con la actualización, el componente ahora es mucho más flexible y maneja el problema del contraste de color de texto automáticamente o con tu control explícito.
+Con la actualización, el componente ahora es mucho más flexible y maneja el problema del contraste de color de texto automáticamente o con tu control explícito. (He mejorado esta Version, se las estare pasando en breve)
