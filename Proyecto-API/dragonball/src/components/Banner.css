@@ -1,0 +1,60 @@
+.banner {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.banner-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  z-index: 1;
+  margin: auto 0;
+}
+
+.banner-img {
+    position: absolute;
+    /* top: 0; <-- ELIMINAR O AJUSTAR */
+    bottom: 0; /* Sugerencia: Anclar al borde inferior */
+    
+    /* 🔑 Centrado horizontal */
+    left: 50%; 
+    
+    height: 100%; /* El alto está bien, se escalará automáticamente */
+    
+    /* 🔑 Ajuste de transformación para centrar y voltear */
+    transform: translateX(-50%) scaleX(-1); 
+    
+    /* ANTES: transform: translate(-50%, -50%); transform: scaleX(-1); <-- ESTO ES LO QUE CAUSA PROBLEMAS DE CENTRADO */
+    
+    z-index: 10;
+    margin: 0; /* Limpiar margen */
+}
+.banner-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  /* transform: translate(50%, 50%); */
+  z-index: 10;
+}
+/* 🎨 Ajuste para móvil: Reducir la altura del banner */
+@media (max-width: 600px) {
+    .banner {
+        height: 25vh; /* O incluso 20vh. Menos intrusivo en el móvil. */
+    }
+}
+/* 🎯 Ajuste para el logotipo */
+@media (max-width: 600px) {
+    .banner-logo {
+        height: 40px; /* Un poco más pequeño */
+        top: 10px;    /* Un pequeño margen arriba */
+        
+        /* Centrado horizontal */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

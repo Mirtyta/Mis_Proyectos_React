@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "nombre": "Zapatilla Deportiva",
+    "descripcion": "Zapatillas diseñadas para actividades deportivas.",
+    "categoria": "Calzado",
+    "precio": 70000,
+    "image": "https://i.ibb.co/NdKGRz3n/zapabordo.webp",
+    "descuento": 0.35
+  },
+  {
+    "id": 2,
+    "nombre": "Zapatilla Urbana",
+    "descripcion": "Zapatillas urbanas colores fluo para uso diario.",
+    "categoria": "Calzado",
+    "precio": 65000,
+    "image": "https://i.ibb.co/Y4qkSfY2/zapafuxia.webp",
+    "descuento": 0.10
+  },
+  {
+    "id": 3,
+    "nombre": "Zapatilla Clásica",
+    "descripcion": "Zapatillas clásicas para uso diario con cordones divertidos.",
+    "categoria": "Calzado",
+    "precio": 60000,
+    "image": "https://i.ibb.co/qtLvym8/zapavioleta.webp",
+    "descuento": 0
+  },
+  {
+    "id": 4,
+    "nombre": "Zapatilla con luces",
+    "descripcion": "Zapatillas con luces cómodas y versátiles.",
+    "categoria": "Calzado",
+    "precio": 70000,
+    "image": "https://i.ibb.co/fYSRxLjV/zapaluz.webp",
+    "descuento": 0
+  },
+  {
+    "id": 5,
+    "nombre": "Zapatilla Nike",
+    "descripcion": "Zapatillas Nike cómodas y modernas.",
+    "categoria": "Calzado",
+    "precio": 80000,
+    "image": "https://i.ibb.co/Kp16b02h/zapaverdem.webp",
+    "descuento": 0
+  },
+    {
+    "id": 6,
+    "nombre": "Zapatilla Clásica",
+    "descripcion": "Zapatillas cómodas con un toque divertido en los cordones.",
+    "categoria": "Calzado",
+    "precio": 60000,
+    "image": "https://i.ibb.co/FqjSzhb4/zapaazul.webp",
+    "descuento": 0
+  },
+  {
+    "id": 7,
+    "nombre": "Gorra de diseño",
+    "descripcion": "Gorra de distintos diseños modernos.",
+    "categoria": "Gorras",
+    "precio": 30000,
+    "image": "https://i.ibb.co/Q7BNyhYZ/gorra1.webp",
+    "descuento": 0.05
+  },
+  {
+    "id": 8,
+    "nombre": "Gorra Clásica",
+    "descripcion": "Gorra de estilo clásico.",
+    "categoria": "Gorras",
+    "precio": 25000,
+    "image": "https://i.ibb.co/BVX2Nnqj/gorra2.webp",
+    "descuento": 0.10
+  },
+  {
+    "id": 9,
+    "nombre": "Gorra Deportiva",
+    "descripcion": "Gorra diseñada para actividades deportivas, colores pastel.",
+    "categoria": "Gorras",
+    "precio": 35000,
+    "image": "https://i.ibb.co/QvbXZNG4/gorra3.webp",
+    "descuento": 0.50
+  },
+  {
+    "id": 10,
+    "nombre": "Gorra Urbana",
+    "descripcion": "Gorra con estilo urbano y moderno.",
+    "categoria": "Gorras",
+    "precio": 40000,
+    "image": "https://i.ibb.co/vC46SQVR/gorra4.webp",
+    "descuento": 0.10
+  },
+  {
+    "id": 11,
+    "nombre": "Mochila Negra",
+    "descripcion": "Una mochila elegante y espaciosa.",
+    "categoria": "Accesorios",
+    "precio": 120000,
+    "image": "https://i.ibb.co/nW2sxBg/bolso1.webp",
+    "descuento": 0
+  },
+  {
+    "id": 12,
+    "nombre": "Mochila y billetera",
+    "descripcion": "Un conjunto elegante para llevar tus esenciales.",
+    "categoria": "Accesorios",
+    "precio": 80000,
+    "image": "https://i.ibb.co/YBvG5SV9/bolso2.webp",
+    "descuento": 0
+  },
+  {
+    "id": 13,
+    "nombre": "Cartera de mujer",
+    "descripcion":"Una cartera moderna y funcional.",
+    "categoria": "Accesorios",
+    "precio": 60000,
+    "image": "https://i.ibb.co/W4NjfgHL/carteraamarilla.webp",
+    "descuento": 0
+  },
+  {
+    "id": 14,
+    "nombre": "Cartera de mano",
+    "descripcion": "Una cartera clásica de cuero.",
+    "categoria": "Accesorios",
+    "precio": 75000,
+    "image": "https://i.ibb.co/HfRrKVcK/carteraazul.webp",
+    "descuento": 0.20
+  },
+  {
+    "id": 15,
+    "nombre": "Cartera Colores vivos",
+    "descripcion": "Cartera de colores vibrantes.",
+    "categoria": "Accesorios",
+    "precio": 90000,
+    "image": "https://i.ibb.co/nsbbRJ8Y/carteraverde.webp",
+    "descuento": 0.15
+  }
+]

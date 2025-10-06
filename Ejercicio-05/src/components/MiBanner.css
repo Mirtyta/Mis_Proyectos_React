@@ -1,25 +1,22 @@
 /* archivo banner.css
  * Diseño de estilos */
 .banner {
-  color: var(--color-resaltado) !important;
   width: 100%;
   font-size: 1.2em;
-  height: 120px;
-  padding: 24px;
+  height: 140px;
+  padding: 34px;
   margin: 0;
   text-align: center;
   font-weight: 500;  
   border-radius: 10px;
 }
 .banner h1 {
-  color: var(--color-claro);
   font-weight: 300;
   text-shadow: 0 0 60px var(--color-claro);
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 .banner p {
-  color: var(--color-claro);
   font-size: 1em;
   font-weight: 300;
 }

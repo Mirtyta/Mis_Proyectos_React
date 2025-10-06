@@ -1,7 +1,7 @@
 // ============================================
 // src/components/Cart.jsx
 // ============================================
-import { Offcanvas, Button, ListGroup, Badge, ButtonGroup } from 'react-bootstrap'
+import { Offcanvas, ListGroup, ButtonGroup } from 'react-bootstrap'
 import Boton from './MiBoton'
 import Banner from './MiBanner'
 
@@ -85,7 +85,7 @@ export default function Cart({
                 <span className="fs-4 fw-bold text-primary">${cartTotal}</span>
               </div>
               <Boton 
-              texto="Finalizar Compra"
+              texto="Vaciar Carrito"
               variant="success" 
               className="w-100" 
               size="lg"

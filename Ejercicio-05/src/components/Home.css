@@ -1,0 +1,44 @@
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+.textoJustify {
+  text-align: justify;
+  padding: 0 20px ;
+}
+.tituloBanner {
+  font-size: clamp(24px, 5vw, 48px);
+  font-style: bold ;
+  font-weight: 200;
+  color: var(--color-fondo); 
+  text-align: center;  
+}
+.img-oferta {
+  width: 8em;
+}
+.fondopromo {
+  background: url("../assets/imagenpromo.png") no-repeat center/contain;
+  min-height: 350px;
+}
+.texto-home {
+  font-size: 1.3em;
+  padding: 2em;
+}
+
+.mensaje p {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.home {
+  width: 100%;
+  font-size: 1.2em;
+  height: 120px;
+  margin: 0;
+  margin-top: 60px;
+  text-align: center;
+  font-weight: 500;  
+  border-radius: 10px;
+  box-sizing: border-box;
+}

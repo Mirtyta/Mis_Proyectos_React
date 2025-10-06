@@ -1,0 +1,39 @@
+
+
+.navbar-nav .nav-link.active {
+  /* ¡Estilo para el elemento ACTIVO! */
+  color: var(--color-fondotr06) !important; /* Color del texto (usa !important si Bootstrap lo está sobrescribiendo) */
+  border-radius: 10px; /* Opcional: bordes redondeados */
+  border: 1px solid #000;
+}
+
+.navbar-nav .nav-link:not(.active):hover{
+  color: var(--color-oscuro) !important; /* texto primario al pasar el ratón */
+}
+.navbar .nav-link {
+  color: var(--color-fondotr06) !important;
+  font-weight: 600;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--color-oscuro)  !important;
+  font-weight: 600; /* Opcional, para destacarlo más */
+}
+.nav-link.active {
+  color: var(--color-oscuro)  !important;
+  font-weight: 600; /* Opcional, para destacarlo más */
+}
+.navbar-dinamica {
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
+  background: var(--color-primario) !important;
+  box-shadow: 0 5px 15px var(--color-fondotr06);
+}
+
+.navbar-dinamica.oculta {
+  transform: translateY(-100%);
+}
+
+.navbar-dinamica.visible {
+  transform: translateY(0);
+}

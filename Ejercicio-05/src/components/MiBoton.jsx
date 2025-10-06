@@ -17,7 +17,7 @@ const Boton = ({
 }) => {
   
   // Combina la clase CSS base ("boton") con cualquier clase extra recibida ("btn etc.")
-  const clasesFinales = `boton ${className || ''}`;
+  const clasesFinales = className || 'boton';
 
   return (
     <button

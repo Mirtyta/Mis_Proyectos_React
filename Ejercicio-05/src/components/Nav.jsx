@@ -1,34 +1,32 @@
-import { 
-  Navbar, 
-  Container, 
-  Nav, 
-  Badge
-} from 'react-bootstrap';
-import Logo from '../assets/marca.png'
+// ============================================
+// src/components/Nav.jsx - CON REACT ROUTER
+// ============================================
+import { useState, useEffect } from "react";
+import { Navbar, Container, Nav, Badge } from 'react-bootstrap'
+import { Link, useLocation } from 'react-router-dom'
+import Logo from '../assets/zapashop.png'
+import './Nav.css'
 
 // Componente principal de la aplicación para demostrar el Navbar
-export default function Navigation({ 
-  currentSection, 
-  setCurrentSection, 
-  cartCount, 
-  showCart, 
-  setShowCart 
-}) {
-
-
-  // Función para manejar la navegación y cerrar el menú después de un clic (opcional)
-  // Usamos el hook useRef o una referencia para cerrar el menú si es necesario, 
-  // pero collapseOnSelect es una mejor práctica para React-Bootstrap.
+export default function Navigation({ cartCount, showCart, setShowCart }) {
+  const location = useLocation()
+  const [mostrarMenu, setMostrarMenu] = useState(true);
+    const [lastScroll, setLastScroll] = useState(0);
   
-  // La lógica de cambiar la sección se mantiene igual.
-  // const handleSectionChange = (section) => {
-  //   setCurrentSection(section);
-  // };
+    useEffect(() => {
+      const handleScroll = () => {
+        const currentScroll = window.scrollY;
+        if (currentScroll > 100 && currentScroll > lastScroll) {
+          setMostrarMenu(false);
+        } else {
+          setMostrarMenu(true);
+        }
+        setLastScroll(currentScroll);
+      };
   
-  // const handleCartToggle = () => {
-  //   setShowCart(prev => !prev);
-  //   // Nota: El Navbar.Collapse se cierra automáticamente con 'collapseOnSelect' en React-Bootstrap.
-  // };
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, [lastScroll]);
 
   return (
     <>
@@ -39,10 +37,10 @@ export default function Navigation({
       */}
       <Navbar 
         collapseOnSelect 
-        expand="lg" 
-        bg="dark" 
-        variant="dark" 
-        className="shadow-lg sticky-top"
+        expand="lg"  
+        variant="light" 
+        className={`navbar-dinamica ${mostrarMenu ? "visible" : "oculta"}`}
+        fixed="top"
       >
         <Container>
           <Navbar.Brand href="#" className="fw-bold fs-3">
@@ -52,22 +50,29 @@ export default function Navigation({
             height='80'
             className='logo'/>  
           </Navbar.Brand>
+        
+          <Navbar.Toggle aria-controls="responsive-navbar-nav text-primary" />
           
-          {/* 4. Toggler: El ícono de hamburguesa visible en móviles */}
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          
-          {/* 5. Collapse: El contenedor que se muestra/oculta */}
+
           <Navbar.Collapse id="responsive-navbar-nav">
             
-            {/* Nav: Utiliza ms-auto para mover los elementos a la derecha en escritorio */}
             <Nav className="ms-auto">
               
+              {/* === Link "Home" === */}
+              <Nav.Link
+                as={Link} 
+                to="/"
+                active={location.pathname === '/'}
+                className="text-uppercase mx-2" // Clases de estilo para el link
+              >
+                🏡 Home
+              </Nav.Link>
+
               {/* === Link "Productos" === */}
               <Nav.Link
-                // 6. Nav.Link en lugar de Button
-                onClick={() => setCurrentSection('productos')}
-                // 7. Prop 'active' para destacar la sección actual (estilo nativo de Nav.Link)
-                active={currentSection === 'productos'}
+                as={Link} 
+                to="/productos"
+                active={location.pathname === '/productos'}
                 className="text-uppercase mx-2" // Clases de estilo para el link
               >
                 📦 Productos
@@ -75,23 +80,22 @@ export default function Navigation({
               
               {/* === Link "Contacto" === */}
               <Nav.Link                
-                active={currentSection === 'contacto'}
-                onClick={() => setCurrentSection('contacto')}
-                className="me-2"
+                as={Link} 
+                to="/contacto"
+                active={location.pathname === '/contacto'}
+                className="text-uppercase mx-2 me-2"
               >
                 ✉️ Contacto
               </Nav.Link>
 
-              {/* === Link "Carrito" (Simulando un botón de color) === */}
-              {/* Usamos className="btn btn-success" para darle la apariencia de un botón 
-                al Nav.Link. 
-                ms-lg-3: Espacio extra en escritorio.
+              {/* === Link "Carrito" === */}
+              {/*  ms-lg-3: Espacio extra en escritorio.
                 mt-2/mt-lg-0: Margen superior en móvil, eliminado en desktop.
               */}
               <Nav.Link
                 onClick={() => setShowCart(!showCart)}
                 active={cartCount > 0} 
-                className="position-relative ms-lg-3 mt-2 mb-2 mt-lg-0 mb-lg-0"
+                className="position-relative ms-lg-3 mt-2 mb-2 mt-lg-0 mb-lg-0 text-uppercase mx-2"
                 style={{ height: 'fit-content' }} // Ajusta la altura del link
               >
                 🛒 Carrito 

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html{
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgba(31, 26, 20, 0.93);
+}
+
+#root {
+  max-width: 90vw; /* Ahora ocupará el 90% del ancho de la pantalla */
+  margin: 0 auto;
+  text-align: center;
+   /* Paleta de colores */
+  --color-fondo: rgb(31, 26, 20);
+  --color-negrotr: rgba(0, 0, 0, 0.9);
+  --color-blanco: rgba(255,255,255,1);
+  --color-fondotr08: rgba(31, 26, 20, 0.8);
+  --color-fondotr06: rgba(31, 26, 20, 0.6);
+  --color-fondotr03: rgba(31, 26, 20, 0.3);
+  --color-fondotr01: rgba(31, 26, 20, 0.1);
+  --color-claro: rgb(247, 235, 212);
+  --color-oscuro: rgb(184, 75, 20);
+  --color-resaltado: rgb(247, 201, 110);
+  --color-resaltadotr03: rgba(247, 201, 110, 0.3);
+}
+
+.read-the-docs {
+  color: #888;
+}

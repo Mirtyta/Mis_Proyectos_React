@@ -12,7 +12,7 @@ export default function ProductList({ productos, addToCart }) {
       title="Tienda"
       description="Agrega a tu carrito"
       />
-      <Row xs={1} md={2} lg={3} className="g-4">
+      <Row xs={1} md={2} lg={4} className="g-4 pb-4">
         {productos.map(producto => (
           <Col key={producto.id}>
             <ProductCard producto={producto} addToCart={addToCart} />

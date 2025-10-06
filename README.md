@@ -53,6 +53,14 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
     * **Descripción:** Tu tarea inicia crear una aplicación que permita a los usuarios agregar productos a un carrito de compras y visualizar la lista de productos seleccionados. *[(ver consigna.md)](./Ejercicio-04/Consigna.md)*
 
 ---
+* **[Proyecto-API: Utilizar la API Dragon Ball](./Proyecto-API/)**
+    * **Descripción:** Conectar la aplicación la API DragonBall y mostrar la informacion en tarjetas *[(ver consigna.md)](./Proyecto-API/dragonball/README.md)*
+
+---
+* **[Ejercicio-05: Router y uso de API](./Ejercicio-05/)**
+    * **Descripción:** Conectar la aplicación Carrito de compras a una API que provea información sobre los productos. Deberás mostrar los datos en tiempo real, manejar estados de carga y errores, y continuar utilizando un diseño atractivo para el eCommerce. *[(ver consigna.md)](./Ejercicio-05/README.md)*
+
+---
 
 ### Cuestionarios
 * **[Todos los Cuestionarios:](./Cuestionarios/)**

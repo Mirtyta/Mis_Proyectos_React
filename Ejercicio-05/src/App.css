@@ -20,13 +20,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #f0f0f0; 
-  /* Utilizo el blanco roto para el texto 😂 */
-  background: rgb(31, 26, 20, 0.9);
-  /* utilizo un negro roto para el texto queda mejor que negro full(cuestion de gustos */
+  background: #f3f3f3;
 }
 :root {
-  max-width: 90%; /* Ahora ocupará el 90% del ancho de la pantalla */
   margin: 0 auto; /* centrado */
   text-align: center;
   /*********************/
@@ -43,13 +39,20 @@ body {
   --color-oscuro: rgb(184, 75, 20);
   --color-resaltado: rgb(247, 201, 110);
   --color-resaltadotr03: rgba(247, 201, 110, 0.3);
+  --color-primario: rgb(162, 228, 54);
 }
 
-.contenido {
+.custom-shadow {
+  box-shadow: 0 5px 15px var(--color-fondotr06);
+}
+
+.contenido-total {
+  max-width: 90%;
   margin: 0 auto;
-  box-shadow: 0 5px 15px var(--color-fondo);
-  background-color: var(--color-fondo) ;
+  margin-top: 120px;
   min-height: 80vh;
+  background: rgba(235, 235, 235, 0.806);
+  box-shadow: 0 5px 15px var(--color-fondotr06);
 }
 
 .logo {
@@ -59,24 +62,28 @@ body {
 .logo:hover {
   filter: drop-shadow(0 0 20px var(--color-resaltado)); 
 }
-
 .icono-interactivo {
   cursor: pointer; /* Esto muestra la 'manito' al pasar el ratón */
 }
-.navbar-nav .nav-link.active {
-  /* ¡Estilo para el elemento ACTIVO! */
-  background-color: var(--color-resaltado); /* Color de fondo */
-  color: var(--color-fondo) !important; /* Color del texto (usa !important si Bootstrap lo está sobrescribiendo) */
-  border-radius: 4px; /* Opcional: bordes redondeados */
+.offcanvas {
+    background-color: rgba(250, 250, 250, 0.8); 
 }
 
-.navbar-nav .nav-link:not(.active):hover {
-  color: var(--color-resaltado) !important; /* texto primario al pasar el ratón */
-}
-.fondo-banner-carrito {
-  background: #000;
+.image-wrapper {
+  /* Fija la altura que quieres que tengan todas las imágenes */
+  height: 250px; 
+  /* Asegura que cualquier parte de la imagen que se salga sea cortada */
+  overflow: hidden; 
 }
 
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.red:hover{
+  transform: scale(1.2);
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

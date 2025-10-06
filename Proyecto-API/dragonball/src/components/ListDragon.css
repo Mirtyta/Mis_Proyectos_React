@@ -1,0 +1,8 @@
+.general {
+  width: 100%;  
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
