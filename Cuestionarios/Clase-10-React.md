@@ -91,7 +91,7 @@ d. Usando únicamente el atributo required en los campos del formulario.
 Retroalimentación:  
 👉 En React, normalmente se hace una función que valida los campos (por ejemplo, que no estén vacíos o que el email tenga formato válido) antes de ejecutar el onSubmit.
 
-La respuesta correcta es: ***Verificando los datos ingresados con una función que chequea su validez antes de enviarlos. ***
+La respuesta correcta es: ***Verificando los datos ingresados con una función que chequea su validez antes de enviarlos.***
 # Pregunta 8
 ***¿Qué método HTTP se utiliza para enviar datos de un formulario a una API?***
 
