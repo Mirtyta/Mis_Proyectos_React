@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home - Ejercicio 06</title>
+
+    <!-- Bootstrap + Bootswatch Materia -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/united/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-l d-flex flex-column min-vh-100">
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">MiEcommerce</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Carrito 🛒</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= MAIN (Home) ================= -->
+    <main class="flex-grow-1 d-flex flex-column flex-lg-row align-items-center justify-content-between container my-5 gap-4">
+      <!-- Bloque texto -->
+      <section class="d-flex flex-column justify-content-center flex-fill px-3">
+        <h1 class="display-4 fw-bold mb-3">Bienvenido a MiEcommerce</h1>
+        <p class="lead mb-4">
+          Descubrí productos únicos y viví una experiencia de compra moderna,
+          simple y rápida. Este es un proyecto creado con React y Bootstrap 💻
+        </p>
+        <a href="#" class="btn btn-warning btn-lg w-fit">Ver Tienda</a>
+      </section>
+
+      <!-- Bloque imagen -->
+      <section class="d-flex justify-content-center flex-fill px-3">
+        <img
+          src="https://picsum.photos/600/400"
+          alt="Imagen de ejemplo"
+          class="img-fluid rounded shadow"
+        />
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-warning text-black text-center py-3 mt-auto">
+      <p class="mb-0">&copy; 2025 MiEcommerce - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

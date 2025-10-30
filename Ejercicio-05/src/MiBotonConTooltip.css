@@ -1,0 +1,37 @@
+/* 1. Contenedor del Elemento con Hover */
+.tooltip-container {
+  /* CRUCIAL: Necesario para posicionar el mensaje de forma absoluta */
+  position: relative; 
+  /* Opcional: Asegura que el contenido del tooltip quede por encima de otros elementos */
+  z-index: 10;
+  display: inline-block; /* Se ajusta al ancho del contenido */
+}
+
+/* 2. El Mensaje (Tooltip Box) */
+.tooltip-box {
+  /* Posicionamiento y Estilo */
+  position: absolute;
+  top: 100%; /* Coloca el tooltip justo debajo del elemento principal */
+  left: 50%; /* Lo centra horizontalmente */
+  transform: translateX(-50%); /* Ajuste fino para el centrado perfecto */
+  
+  /* Visibilidad e Interacción */
+  opacity: 0; /* Inicialmente invisible */
+  visibility: hidden; /* Asegura que no interfiera con el mouse */
+  transition: opacity 0.3s, visibility 0.3s; /* Transición suave */
+  
+  /* Apariencia */
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 8px 12px;
+  border-radius: 4px;
+  min-width: 150px;
+  text-align: center;
+  white-space: nowrap; /* Evita saltos de línea en el mensaje */
+}
+
+/* 3. Regla para Mostrar el Tooltip */
+.tooltip-container:hover .tooltip-box {
+  opacity: 1;
+  visibility: visible;
+}

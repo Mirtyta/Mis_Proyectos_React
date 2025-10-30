@@ -66,7 +66,7 @@ body {
   cursor: pointer; /* Esto muestra la 'manito' al pasar el ratón */
 }
 .offcanvas {
-    background-color: rgba(250, 250, 250, 0.8); 
+    background-color: rgba(250, 250, 250, 0.9); 
 }
 
 .image-wrapper {
@@ -84,6 +84,8 @@ body {
 .red:hover{
   transform: scale(1.2);
 }
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

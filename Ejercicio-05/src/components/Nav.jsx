@@ -2,16 +2,18 @@
 // src/components/Nav.jsx - CON REACT ROUTER
 // ============================================
 import { useState, useEffect } from "react";
+import { useCartContext } from "../hooks/useCartContext";
 import { Navbar, Container, Nav, Badge } from 'react-bootstrap'
 import { Link, useLocation } from 'react-router-dom'
 import Logo from '../assets/zapashop.png'
 import './Nav.css'
 
 // Componente principal de la aplicación para demostrar el Navbar
-export default function Navigation({ cartCount, showCart, setShowCart }) {
+export default function Navigation({ showCart, setShowCart }) {
   const location = useLocation()
   const [mostrarMenu, setMostrarMenu] = useState(true);
-    const [lastScroll, setLastScroll] = useState(0);
+  const [lastScroll, setLastScroll] = useState(0);
+  const { cartCount} = useCartContext();
   
     useEffect(() => {
       const handleScroll = () => {
@@ -39,6 +41,7 @@ export default function Navigation({ cartCount, showCart, setShowCart }) {
         collapseOnSelect 
         expand="lg"  
         variant="light" 
+        bg="info"
         className={`navbar-dinamica ${mostrarMenu ? "visible" : "oculta"}`}
         fixed="top"
       >
@@ -75,7 +78,7 @@ export default function Navigation({ cartCount, showCart, setShowCart }) {
                 active={location.pathname === '/productos'}
                 className="text-uppercase mx-2" // Clases de estilo para el link
               >
-                📦 Productos
+                📦 Tienda
               </Nav.Link>
               
               {/* === Link "Contacto" === */}
@@ -95,7 +98,7 @@ export default function Navigation({ cartCount, showCart, setShowCart }) {
               <Nav.Link
                 onClick={() => setShowCart(!showCart)}
                 active={cartCount > 0} 
-                className="position-relative ms-lg-3 mt-2 mb-2 mt-lg-0 mb-lg-0 text-uppercase mx-2"
+                className="position-relative ms-lg-3 mt-2 mb-2 mt-lg-0 mb-lg-0"
                 style={{ height: 'fit-content' }} // Ajusta la altura del link
               >
                 🛒 Carrito 

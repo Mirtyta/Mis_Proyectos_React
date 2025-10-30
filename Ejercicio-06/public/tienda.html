@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda - Chicken Jockey</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <style>
+    body {
+      font-family: 'Josefin Sans', sans-serif;
+      background-color: var(--bs-body-bg);
+      color: var(--bs-body-color);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      border-bottom: 1px solid #ddd;
+    }
+    .header-icons i {
+      font-size: 1.4rem;
+      margin-left: 20px;
+      position: relative;
+      cursor: pointer;
+    }
+    .cart-badge {
+      position: absolute;
+      top: -6px;
+      right: -10px;
+      background: red;
+      color: #fff;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 0.7rem;
+    }
+    .navbar {
+      font-weight: 600;
+    }
+    .banner {
+      background: #f5f5f5;
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+    .banner h1 {
+      font-weight: 600;
+    }
+    .banner p {
+      color: #555;
+    }
+    .tienda {
+      padding: 60px 0;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      background: #fff;
+      transition: transform 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+    .product-info {
+      padding: 15px;
+    }
+    .product-info h5 {
+      font-weight: 600;
+    }
+    .price {
+      font-weight: 600;
+      color: #f57c00;
+      margin: 5px 0;
+    }
+    .color-options {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin: 8px 0;
+    }
+    .color-swatch {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+    }
+    .size-options {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .size-badge {
+      border: 1px solid #ccc;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      background: #f9f9f9;
+    }
+    /* Producto estrella */
+    .featured {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+    .featured img {
+      width: 100%;
+      height: auto;
+    }
+    footer {
+      background: #f8f8f8;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .icons-overlay i { background: rgba(255, 255, 255, 0.8); border-radius: 50%; width: 30px;height: 30px; cursor: pointer; padding-top: 5px; padding-left: 3px;}
+    .icons-overlay i:hover { background: rgba(200, 200, 200, 0.8);}
+
+    .ribbon {
+  position: absolute;
+  top: 15px;
+  left: -35px;
+  background: #dc3545; /* rojo Bootstrap */
+  color: #fff;
+  padding: 6px 40px;
+  transform: rotate(-45deg);
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+
+    @media (max-width: 768px) {
+      .featured {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><h3>Chicken Jockey</h3></div>
+    <div class="header-icons">
+      <i class="flaticon-profile"></i>
+      <i class="flaticon-bag">
+        <span class="cart-badge">3</span>
+      </i>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-1">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Zapatillas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Gorras</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Páginas</a></li>
+      </ul>
+      <div class="form-check form-switch ms-3">
+        <input class="form-check-input" type="checkbox" id="themeSwitch" />
+        <label class="form-check-label text-white" for="themeSwitch">🌙</label>
+      </div>
+    </div>
+  </nav>
+
+  <section class="banner">
+    <div class="container">
+      <h1>Tienda</h1>
+      <p><a href="#">Home</a> / Tienda</p>
+      <p>Explorá nuestros productos destacados</p>
+    </div>
+  </section>
+
+  <section class="tienda">
+    <div class="container">
+      <div class="product-grid">
+        <!-- Producto estrella -->
+<!-- Producto estrella -->
+<div class="product-card featured d-grid" style="grid-template-columns: 1fr 1fr; align-items: stretch;">
+  <!-- Imagen a la izquierda -->
+  <div class="position-relative">
+    <img src="https://picsum.photos/300/300?random=1" alt="Producto estrella" style="width:100%; height:300px; object-fit:cover;">
+    <div class="icons-overlay position-absolute top-0 end-0 m-3 d-flex gap-1">
+      <i class="bi bi-heart"></i>
+      <i class="bi bi-eye"></i>
+      <i class="bi bi-bag"></i>
+    </div>
+  </div>
+
+  <!-- Info y oferta a la derecha -->
+  <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-light position-relative">
+    <div class="badge bg-danger mb-2 px-3 py-2" style="font-size:0.9rem;">🔥 Oferta especial -20%</div>
+    <h5 class="mb-1">Zapatilla Premium</h5>
+    <div class="price mb-2">$25.000</div>
+    <div class="color-options">
+      <div class="color-swatch" style="background:#000"></div>
+      <div class="color-swatch" style="background:#f00"></div>
+      <div class="color-swatch" style="background:#888"></div>
+    </div>
+    <div class="size-options mt-2">
+      <span class="size-badge">39</span>
+      <span class="size-badge">40</span>
+      <span class="size-badge">41</span>
+      <span class="size-badge">42</span>
+    </div>
+  </div>
+</div>
+
+
+
+        <!-- Productos normales -->
+        <div class="product-card position-relative">
+          <img src="https://picsum.photos/300/300?random=2" alt="Producto" />
+            <div class="icons-overlay position-absolute top-0 end-0 m-4 d-flex gap-1">
+              <i class="bi bi-heart"></i>
+              <i class="bi bi-eye"></i>
+              <i class="bi bi-bag"></i>
+            </div>
+          <div class="product-info">
+            <h5>Gorra Classic</h5>
+            <div class="price">$8.000</div>
+            <div class="color-options">
+              <div class="color-swatch" style="background:#222"></div>
+              <div class="color-swatch" style="background:#0055ff"></div>
+            </div>
+            <div class="size-options">
+              <span class="size-badge">Única</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://picsum.photos/300/300?random=3" alt="Producto" />
+          <div class="product-info">
+            <h5>Remera Urban</h5>
+            <div class="price">$12.500</div>
+            <div class="color-options">
+              <div class="color-swatch" style="background:#000"></div>
+              <div class="color-swatch" style="background:#fff"></div>
+            </div>
+            <div class="size-options">
+              <span class="size-badge">S</span>
+              <span class="size-badge">M</span>
+              <span class="size-badge">L</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://picsum.photos/300/300?random=4" alt="Producto" />
+          <div class="product-info">
+            <h5>Campera Wind</h5>
+            <div class="price">$22.000</div>
+            <div class="color-options">
+              <div class="color-swatch" style="background:#333"></div>
+              <div class="color-swatch" style="background:#ff9900"></div>
+            </div>
+            <div class="size-options">
+              <span class="size-badge">M</span>
+              <span class="size-badge">L</span>
+              <span class="size-badge">XL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://picsum.photos/300/300?random=5" alt="Producto" />
+          <div class="product-info">
+            <h5>Bolso Street</h5>
+            <div class="price">$10.000</div>
+            <div class="color-options">
+              <div class="color-swatch" style="background:#444"></div>
+              <div class="color-swatch" style="background:#b5651d"></div>
+            </div>
+            <div class="size-options">
+              <span class="size-badge">Único</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Chicken Jockey. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const switchBtn = document.getElementById('themeSwitch');
+    switchBtn.addEventListener('change', () => {
+      document.body.classList.toggle('bg-dark');
+      document.body.classList.toggle('text-white');
+    });
+  </script>
+</body>
+</html>

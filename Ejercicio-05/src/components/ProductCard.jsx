@@ -3,6 +3,7 @@
 // ============================================
 import { Card } from 'react-bootstrap'
 import Boton from './MiBoton'
+import '../MiBotonConTooltip.css'
 
 export default function ProductCard({ producto, addToCart }) {
   return (
@@ -15,12 +16,12 @@ export default function ProductCard({ producto, addToCart }) {
         <Card.Text className="text-primary fw-bold fs-4">
           ${producto.precio}
         </Card.Text>
-        <Boton 
-          texto="Agregar al carrito"
-          onClick={() => addToCart(producto)}
-          type="button"
-          className="w-100 btn btn-primary"
-        />
+          <Boton 
+            texto="Agregar al carrito"
+            onClick={() => addToCart(producto)}
+            type="button"
+            className="w-100 btn btn-primary"
+          />
       </Card.Body>
     </Card>
   )

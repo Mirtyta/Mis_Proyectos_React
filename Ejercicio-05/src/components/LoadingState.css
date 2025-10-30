@@ -1,0 +1,29 @@
+/* ============================================
+    ManejoDeCarga.css
+    ============================================
+    Estilos para el componente ManejoDeCarga.
+    Centra el contenido vertical y horizontalmente
+    y usa los colores definidos en la paleta (App.css :root)
+   ============================================ */
+
+/* Contenedor principal de estado (carga o error) */
+.estado-container {
+  min-height: 100vh;              /* ocupa toda la pantalla */
+  background-color: var(--color-fondo);
+  display: flex;                  /* centra usando flexbox */
+  justify-content: center;        /* centrado horizontal */
+  align-items: center;            /* centrado vertical */
+  text-align: center;             /* texto centrado */
+}
+
+/* Texto principal */
+.texto-estado {
+  font-size: 2rem;
+  color: var(--color-resaltado);  /* color de tu paleta */
+}
+
+/* Si hay error, cambiamos el color */
+.texto-estado.error {
+  color: crimson;
+  font-weight: 600;
+}

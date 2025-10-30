@@ -1,0 +1,6 @@
+"https://picsum.photos/300/300?random=2"
+
+ <td class="d-flex align-items-center gap-2">
+                <img src="https://picsum.photos/60/60?random=1" alt="" class="rounded">
+                Zapatilla Premium
+              </td>

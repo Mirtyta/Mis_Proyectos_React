@@ -29,7 +29,16 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
 12. [Página html con paleta de colores de mi ejercicio 4](./Informacion/preview.html)
 13. [Mi Componente Boton](./Informacion/mi-boton.md)
 14. [useState Carrito de Compras](./Informacion/useState-Carrito-Compras.md)
-
+15. [Context en el carrito, Uso de MockAPI](./Ejercicio-05/src/detallesDelEjercicio.md)
+16. [Re-Estructurando mi APP](./Informacion/reestructurandomiapp.md)
+17. [Popup Global](./Informacion/popupGlobal.md)
+18. [Manejo de recursos REACT](./Informacion/manejo-de-recursos.md)
+19. [Hooks en acción](./Informacion/hooks-en-accion.md)
+20. [Flujo actual de mi app](./Informacion/herramientas-esenciales.md)
+21. [Errores comunes](./Informacion/errores-comunes.md)
+22. [Código Limpio Modular](./Informacion/codigo-limpio-modular.md)
+23. [React otra historia](./Informacion/React.md)
+24. [Herramientas escenciales vsCode](./Informacion/herramientas-esenciales.md)
 
 ---
 
@@ -50,7 +59,7 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
 
 ---
 * **[Ejercicio-04: Crear carrito compra](./Ejercicio-04/)**
-    * **Descripción:** Tu tarea inicia crear una aplicación que permita a los usuarios agregar productos a un carrito de compras y visualizar la lista de productos seleccionados. *[(ver consigna.md)](./Ejercicio-04/Consigna.md)*
+    * **Descripción:** Tu tarea inicia crear una aplicación que permita a los usuarios agregar productos a un carrito de compras y visualizar la lista de productos seleccionados. *[(ver consigna.md)](./Ejercicio-04/README.md)*
 
 ---
 * **[Proyecto-API: Utilizar la API Dragon Ball](./Proyecto-API/)**
@@ -58,7 +67,7 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
 
 ---
 * **[Ejercicio-05: Router y uso de API](./Ejercicio-05/)**
-    * **Descripción:** Conectar la aplicación Carrito de compras a una API que provea información sobre los productos. Deberás mostrar los datos en tiempo real, manejar estados de carga y errores, y continuar utilizando un diseño atractivo para el eCommerce. *[(ver consigna.md)](./Ejercicio-05/README.md)*
+    * **Descripción:** Conectar la aplicación Carrito de compras a una API que provea información sobre los productos. Deberás mostrar los datos en tiempo real, manejar estados de carga y errores, y continuar utilizando un diseño atractivo para el eCommerce. *[(ver consigna.md)](./Ejercicio-05/README.md)*, [Información sobre el ejercicio:](./Ejercicio-05/src/detallesDelEjercicio.md)
 
 ---
 
@@ -97,7 +106,7 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
 
 ---
 
-* **Cuestionario Clase-10 React:** En Proceso - Aun no subido**
+* **[Cuestionario Clase-10 React:](./Cuestionarios/Clase-10-React.md)**
     * Cuestionario "Clase-10 React - Habilita Clase-11 y Clase-12"
 
 ---

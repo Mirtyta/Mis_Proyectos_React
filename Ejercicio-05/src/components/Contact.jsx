@@ -1,9 +1,25 @@
-import React, { useState } from "react";
+// ============================================
+// src/components/Contact.jsx
+// ============================================
+// --------------------------------------------
+// Importamos useState para los inputs
+// --------------------------------------------
+import { useState } from "react";
+// --------------------------------------------
+// Importamos Boostrap y css para las vistas
+// --------------------------------------------
 import { Container, Row, Col, Form, Modal } from "react-bootstrap";
+import "../App.css";
+// --------------------------------------------
+// Importamos mis componentes
+// --------------------------------------------
 import Boton from "./MiBoton";
 import Banner from "./MiBanner"
+// --------------------------------------------
+// Importamos el logo se nuestra marca inventada
+// --------------------------------------------
 import imagelogo from "../assets/favicon1.png";
-import "../App.css";
+
 
 const Contact = () => {
 	// States para los inputs del formulario
@@ -75,8 +91,8 @@ const Contact = () => {
 									<Form.Control
 										type="text"
 										placeholder="Nombre completo"
-										name="nombre"         // <-- Agrega el atributo 'name'
-        						id="inputNombre"       // <-- Agrega el atributo 'id'
+										name="nombre"         // <-- Agrega el atributo 'name' requerido por el navegador
+        						id="inputNombre"       // <-- Agrega el atributo 'id'  requerido por el navegador
 										autoComplete="nombre"
 										required
 										value={nombre}

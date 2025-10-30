@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 // Importamos para la parte visual css, png, bootstrap
-import { Container, Row, Col, Modal } from "react-bootstrap";
+import { Row, Col, Modal } from "react-bootstrap";
 import Promo from "../assets/imagenpromo.png"
 import Marca2 from "../assets/marca1.png"
 import "./Home.css"
