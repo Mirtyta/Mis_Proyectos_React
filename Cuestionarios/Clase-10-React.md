@@ -117,10 +117,10 @@ c. useState
 d. useRef  
 
 Retroalimentación:  
-👉 Se usa useContext para acceder al valor que provee un Context sin tener que pasar props entre componentes.
-useEffect → Ejecuta código después de renderizar o cuando cambian dependencias.
-useState → Crea y maneja estado local en un componente.
-useRef → Mantiene referencias a elementos o valores que no provocan re-render.
+👉 Se usa useContext para acceder al valor que provee un Context sin tener que pasar props entre componentes.  
+useEffect → Ejecuta código después de renderizar o cuando cambian dependencias.  
+useState → Crea y maneja estado local en un componente.  
+useRef → Mantiene referencias a elementos o valores que no provocan re-render.  
 
 La respuesta correcta es: ***useContext***
 
