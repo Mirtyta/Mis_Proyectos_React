@@ -70,7 +70,7 @@ export default function ProductDetailPage({ getProductoById }) {
 
               {/* Badge de descuento */}
               {producto.descuento > 0 && (
-                <span className="image-badge fs-4">
+                <span className="image-badge-estrella fs-4 mt-5">
                   {producto.descuento * 100}%<sub className="fs-6">OFF</sub>
                 </span>
               )}

@@ -121,7 +121,7 @@ export default function Carrito() {
               </tr>
 
               <tr>
-                <td>Descuento productos:</td>
+                <td>Descuentos:</td>
                 <td className="text-end">
                   {formatearPrecio(resumen.descuentoTotal)}.<sup>00</sup>
                 </td>
@@ -135,7 +135,7 @@ export default function Carrito() {
               </tr>
 
               <tr>
-                <td>Transporte:</td>
+                <td>Costo envío:</td>
                 <td className="text-end">{formatearPrecio(resumen.envio)}.<sup>00</sup></td>
               </tr>
 
@@ -165,7 +165,7 @@ export default function Carrito() {
           {/* 🎫 Campo para código de descuento */}
           <div className="mt-3">
             <label htmlFor="codigo" className="form-label fw-bold">
-              Código "Envío GRATIS":
+              Ingrese el código "ENVIOGRATIS":
             </label>
             <input
               id="codigo"
@@ -178,16 +178,17 @@ export default function Carrito() {
           </div>
 
           <div className="mt-3">
-            <Boton
-              texto="Vaciar carrito"
-              onClick={clearCart}
-              className="btn btn-danger me-2"
-            />
-            <Boton
+             <Boton
               texto="Ir a pagar"
               onClick={() => alert("Aquí iría el flujo de pago")}
-              className="btn btn-success"
+              className="btn btn-success py-2 px-2"
             />
+            <Boton
+              texto="Cancelar Compra"
+              onClick={clearCart}
+              className="btn btn-warning py-2 px-2"
+            />
+           
           </div>
           <div>
             {/* 🏷️ Si hay descuento o condiciones */}
