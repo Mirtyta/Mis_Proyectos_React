@@ -1,0 +1,15 @@
+🌞 Modo claro (3 colores suaves, combinan con header/footer oscuro)
+
+#fdf6e3 → beige muy claro (contenido principal)
+
+#f0e6d2 → beige cálido (banner o bloques destacados)
+
+#e8e2d0 → blanco roto / detalle (tarjetas, contenedores internos)
+
+🌑 Modo oscuro (3 grises armónicos)
+
+#2e2e2e → gris oscuro (banner o cabecera)
+
+#3b3b3b → gris medio (contenido principal)
+
+#4a4a4a → gris más claro (detalles internos, tarjetas)

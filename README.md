@@ -70,6 +70,11 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
     * **Descripción:** Conectar la aplicación Carrito de compras a una API que provea información sobre los productos. Deberás mostrar los datos en tiempo real, manejar estados de carga y errores, y continuar utilizando un diseño atractivo para el eCommerce. *[(ver consigna.md)](./Ejercicio-05/README.md)*, [Información sobre el ejercicio:](./Ejercicio-05/src/detallesDelEjercicio.md)
 
 ---
+* **[Ejercicio-06: Detalle Productos y Rutas](./Ejercicio-06/)**
+    * **Descripción:** Se Mejoro la navegación del eCommerce, se uso **React Router y se agrego y optimizo nuevas rutas**. Además, se maneja de forma **modular el Estado de carga y manejo de errores**, y se agrego **Detalle de producto**. *[(ver consigna.md)](./Ejercicio-06/README.md)*, [Información sobre el ejercicio:](./Ejercicio-06/DetallesDelEjercicio6.md), y agregue un texto más [técnico](./Ejercicio-06/detallesDelEjercicio.md)
+
+
+---
 
 ### Cuestionarios
 * **[Todos los Cuestionarios:](./Cuestionarios/)**

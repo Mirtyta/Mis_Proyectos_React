@@ -1,35 +1,94 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// ============================================
+// src/App.jsx (REFACTORIZADO ✨)
+// ============================================
 
-function App() {
-  const [count, setCount] = useState(0)
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+// Hook para traer productos
+import { useFetchProductos } from './hooks/useFetchProductos';
+
+// Context del carrito
+import { CarritoProvider } from './context/CarritoProvider';
+
+// Componentes comunes
+import HeaderTop from './components/HeaderTop'
+import Navigation from './components/Nav';
+import Footer from './components/Footer';
+import ProductoDetalle from './components/ProductDetails';
+
+// Páginas
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ProductosPage from './pages/ProductsPage';
+import ContactoPage from './pages/ContactPage';
+import CarritoPage from './pages/CartPage';
+import EnConstruccion from './pages/LoginPage';
+
+// --------------------------------------------
+// Importamos el Manejo de carga y errores
+// --------------------------------------------
+import LoadingState from "./components/LoadingState";
+
+/**
+ * 🎯 App ahora solo se encarga de:
+ * - Definir rutas
+ * - Estructura general (Nav + Contenido + Footer)
+ * - Proveer el carrito a toda la app
+ * 
+ * ❌ YA NO hace:
+ * - Manejar estado del carrito
+ * - Lógica de agregar/quitar productos
+ * - Pasar props a 3+ niveles
+ */
+export default function App() {
+  // Traemos los productos, error, carga y productId para detalle
+  const { productos, error, cargando, getProductoById } = useFetchProductos();
+  // const cargandoConDelay = cargando || true; // fuerza a true
+
+  // -------------------------------
+  // 🧭 Estructura de la app
+  // -------------------------------
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    // 🔥 El CarritoProvider envuelve TODO
+    // Ahora CUALQUIER componente puede acceder al carrito
+    <CarritoProvider>
+      <LoadingState cargando={cargando} error={error}>
+      <BrowserRouter>
+        
+        <div className='body-app'>
+          <HeaderTop/>
+          {/* 
+          Navigation ya no necesita cartCount como prop
+          Puede obtenerlo directamente del context
+          */}
+          <Navigation />
 
-export default App
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route
+              path="/productos"
+              element={<ProductosPage productos={productos} />}
+            />
+            
+            <Route path="/contacto" element={<ContactoPage />} />
+            
+            <Route
+              path="/producto/:id"
+              element={<ProductoDetalle getProductoById={getProductoById} />}
+            />
+            
+            <Route path="/carrito" element={<CarritoPage />} />
+
+            <Route path="/login" element={<EnConstruccion />} />
+
+            <Route path="/about" element={<AboutPage />} />
+          </Routes>
+
+        </div>
+
+        <Footer />
+      </BrowserRouter>
+      </LoadingState>
+    </CarritoProvider>
+  );
+}

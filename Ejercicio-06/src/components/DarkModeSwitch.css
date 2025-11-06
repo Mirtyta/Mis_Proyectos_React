@@ -1,0 +1,71 @@
+  /*********************/
+  /* Paleta de colores */
+  /*********************/
+:root {  
+  /* Ligth */
+  --color-bg-light:  #f9f9f9;
+  --color-bg-light1:  #e9e9e9;
+  --color-texto-light:  #555;
+  --color-surface-light: rgba(255, 255, 255, 0.2);
+}
+
+
+  /*********************/
+  /* Modo C L A R O    */
+  /*********************/
+  /*  🌞 Modo claro    */
+
+   /* Modo Claro por defecto.
+   Definimos que cambia y que color usamos para eso, tanto fondo como texto */
+
+
+ /* body de la app éste formato está en app.jsx */
+.body-app {
+background-color: rgb(255, 228, 178);
+color: var(--color-texto-light);
+border-radius: 75px 75px 0 0;
+}
+/* fondo comun todas las paginas se configura el containes con fondo-page  */
+.fondo-page {
+  background-color: rgb(255, 228, 148);
+  color: var(--color-texto-light) !important;
+}
+/* el header-Top arriba del menu */
+.header-top{
+  background-color: rgb(255, 240,158 );
+  color: var(--color-texto-light) !important;
+  border-radius: 50px 50px 0 0;
+}
+/* los textos adicionales del header top */
+.ibuscar, .tbuscar {
+  color:var(--color-texto-light) !important;
+}
+/* el hover de los links de HeaderTop */
+.overlink:hover   {
+  color:var(--color-texto-light) !important;
+  transform: scale(1.1) !important;
+}
+/* El banner es el titulo en todas las paginas */
+.banner {
+  background-color: rgb(255, 228, 158);
+  color: var(--color-texto-light) !important;
+}
+/* detalles internos de las paginas en transparencia 
+para que se adepten mejor a los temas */
+.detalles-internos {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* -----------------FIN HEADER TOP----------------------- */
+  /*********************/
+  /* Modo O S C U R O  */
+  /*********************/
+  /* 🌑 Modo oscuro    */
+
+  /* Mi idea es hacer una clase para modificar los colores asignados en al modo light
+  ejemplo:
+  .header-top.darkMode{}
+  ese es el siguiente paso sera en el ejercicio 7.. si llego
+  */
+
+
+
