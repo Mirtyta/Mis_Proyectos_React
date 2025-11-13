@@ -1,0 +1,82 @@
+/* Store.css */
+
+/* --- Contenido Principal (2 Columnas) --- */
+.main-content {
+  min-height: 80vh !important;
+  display: flex;
+  justify-items: space-between;
+  gap: 10px; /* Espacio entre las columnas */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-direction: row;
+}
+/* Detalle de producto */
+.product-details-column {
+  width: 60%; /* Columna de producto será más ancha (por ejemplo, 60% del espacio) */
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* tamaño imagen */
+.item-thumbnail {
+  height: 50px;
+  text-align: center;
+}
+/* linea descuento */
+.item-line-total {
+    font-size: 1em;
+    margin-top: 10px;
+}
+/* Columna Derecha: Totales */
+.totals-column {
+  width: 40%; /* Columna de totales será más estrecha (por ejemplo, 40% del espacio) */
+  min-width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px var(--color-claro);
+  height: fit-content; /* Para que no ocupe todo el alto si el contenido es corto */
+}
+/* color fondo tabla Resumen de pedido en CarritoPage */
+.fondo-resumen tbody,
+.fondo-resumen td,
+.fondo-resumen th {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+/* --- Formas de Pago (Footer) --- */
+.full-width-separator {
+    width: 100%;
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid var(--color-claro);
+}
+.payment-options-footer {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--color-claro);
+}
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+.secure-text {
+    font-size: 0.9em;
+    color: var(--color-resaltado);
+    margin-top: 10px;
+}
+/* Media Query para móvil: apila las columnas */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .totals-column {
+    order: -1; /* Mueve los totales encima en móvil */
+    width: 100%;
+  }
+  .product-details-column {
+  width: 100%; /* Columna de producto será más ancha (por ejemplo, 60% del espacio) */
+  }
+
+}

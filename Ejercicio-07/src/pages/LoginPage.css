@@ -1,0 +1,84 @@
+/* LoginPage.css - versión final con 1 sola idle, transiciones suaves y fade entre estados */
+
+.login-flex-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* contenedor del personaje */
+.characters-wrapper {
+  width: 220px;
+  height: 220px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* imagen del personaje */
+.character-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transform: scale(0.96);
+  transition:
+    opacity 0.8s ease-in-out,
+    transform 0.8s ease-in-out;
+  will-change: opacity, transform;
+}
+
+/* visible */
+.character-img.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* animaciones según estado */
+.character-img.idle {
+  animation: idleFloat 4s ease-in-out infinite;
+}
+
+.character-img.user {
+  transform: translateX(6px) scale(1.02) rotate(-2deg);
+  animation: fadeAppear 0.8s ease-in-out forwards;
+}
+
+.character-img.password {
+  transform: translateX(-6px) scale(0.98) rotate(2deg);
+  animation: fadeAppear 0.8s ease-in-out forwards;
+}
+
+/* animación suave de flotado */
+@keyframes idleFloat {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(-1deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+/* aparición natural */
+@keyframes fadeAppear {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* formulario */
+.login-form-right {
+  max-width: 600px;
+}
+
+/* responsivo */
+@media (max-width: 768px) {
+  .login-flex-wrapper {
+    flex-direction: column;
+  }
+  .characters-wrapper {
+    order: -1;
+    width: 160px;
+    height: 160px;
+  }
+}

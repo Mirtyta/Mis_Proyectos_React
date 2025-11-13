@@ -1,6 +1,7 @@
-// ============================================
+// ====================================================
 // src/App.jsx (REFACTORIZADO ✨)
-// ============================================
+// Deploy de la App: https://ejercicio-06.netlify.app/
+// ====================================================
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 

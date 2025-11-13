@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "bootswatch": "^5.3.8",
+    "react-bootstrap": "^2.10.10",
+    "react-router-dom": "^7.9.5",
+    "react-toastify": "^11.0.5"
+  }
+}

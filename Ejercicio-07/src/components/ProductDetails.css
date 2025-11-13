@@ -1,0 +1,135 @@
+/* ============================================
+// src/pages/ProductDetailPage.css
+// Estilos de la pagina ProductDetailsPage.jsx
+// ============================================ */
+
+/* contenedor de detalles producto */
+/* .product-details-content {
+  border-radius: 20px;
+} */
+/* Contenedor de la card y el precio que esta fuera del card */
+.card-wrapperpd {
+  position: relative;
+  display: block; /* en lugar de inline-block */
+  width: 100%;
+}
+
+/* Precio flotando fuera de la tarjeta, más chico y a la izquierda */
+.product-title-outsidepd {
+  position: absolute;
+  top: -1em; /* más cerca de la tarjeta */
+  left: 20px; /* alineado a la izquierda */
+  background: var(--color-amarillo);
+  color: var(--color-negro);
+  font-size: 1.4rem; /* más chico */
+  font-weight: 600;
+  padding: 5px 15px; /* compacto */
+  border-radius: 20px;
+  border: 5px solid #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+  z-index: 5;
+  text-align: left;
+}
+/* contenedor foto y detalle */
+.product-cardpd {
+  overflow: hidden;
+  transition: all 0.4s ease;
+  position: relative;
+  padding-top: 0;
+}
+/* contenedor opciones */
+.select-detallepd {
+  width: 251px;
+  text-align: center;
+}
+/* titulo opciones */
+.select-detallepd h4 {
+  text-transform: uppercase;
+  padding-top: 2em;
+  margin: 0;
+}
+/* Titulo opciones color tamaño */
+.select-detallepd span {
+  color: var(--color-claro);
+  /* font-size: 14px; */
+  font-weight: 400;
+  text-align: center;
+  padding: 15px;  
+}
+/* ul */
+.select-detallepd ul {
+  list-style: none;     
+  color: var(--color-claro);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 5px;
+  gap: 5px;
+}
+/* li */
+.select-detallepd li {
+  color: var(--color-negro) ;
+  background: var(--color-amarillo);
+  border: var(--color-fondo) solid 1px;
+  box-shadow: 1px 1px 15px var(--color-gris);
+  padding: 5px;
+  font-weight: 600;
+}
+/* li hover */
+.select-detallepd li:hover {
+  background: var(--color-claro) ;
+  cursor: pointer;
+}
+/* li seleccionado */
+.select-detallepd li.selected {
+  background: var(--color-claro) ;
+  color: var(--color-fondo);
+  cursor: pointer;
+}
+/* formatos para el botones */
+.btn-zapapd {
+ margin: 0 auto !important;
+}
+
+
+
+
+/* contenedor de Nombre producto y botones */
+.card-bodypd {
+  padding: 1.2rem;
+  min-width: 280px;
+  flex: 1;
+}
+
+
+/* formato nombre producto */
+.card-bodypd h4 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* A G R E G A D O */
+
+.product-name, .product-select {color: #555;}
+    .product-image { width: 100%; border-radius: 10px; object-fit: cover; }
+    .product-details { background: rgba(255, 255, 255, 0.7); padding: 2rem; border-radius: 10px; }
+    .quantity-control { display: flex; align-items: center; background: #f0f0f0; border-radius: 10px; width: fit-content; padding: 0.25rem 0.5rem; margin-bottom: 1rem; }
+    .quantity-control span { cursor: pointer; padding: 0 0.5rem; font-weight: 600; user-select: none; }
+    .size-option, .color-option { display: inline-block; margin-right: 0.5rem; margin-bottom: 0.5rem; padding: 0.25rem 0.5rem; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; }
+    .color-option { width: 25px; height: 25px; padding: 0; border-radius: 50%; display: inline-block; vertical-align: middle; }
+    .reviews { font-size: 0.9rem; margin-bottom: 0.5rem; color: #555; }
+    .btn-buy { background-color: #ff6600; color: #fff; font-weight: 600; width: 100%; }
+    .product-info p { font-size: 0.9rem; color: #555; }
+    .product-price {color: #212121;  }
+    .stock {margin-top: -22px; color: green;}
+    .product-ok{ margin-top: -30px;}
+    @media (max-width: 768px) {
+      .product-name { text-align: left; margin-bottom: 1rem; }
+    }
+
+
+
+
