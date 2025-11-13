@@ -76,7 +76,7 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
 
 ---
 * **[Ejercicio-07: Rutas dinamicas y protegidas](./Ejercicio-07/)**
-    * **Descripción:** la aplicación integra ***navegación dinámica, seguridad básica, consumo de API externa y manejo global*** de estado mediante hooks personalizados. *[(ver consigna)](./Ejercicio-07/README.md)*, [Información sobre el ejercicio:](./Ejercicio-07/src/DetalleDelEjercicio.md).
+    * **Descripción:** la aplicación integra ***navegación dinámica, seguridad básica, consumo de API externa y manejo global*** de estado mediante hooks personalizados. *[(ver consigna)](./Ejercicio-07/README.md)*, [Información sobre el ejercicio:](./Ejercicio-07/src/DetalleDelEjercicio.md). ***[(Despliegue Ejercicio 7)](https://ejercicio-07.netlify.app/)***
 
 ---
 
