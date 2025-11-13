@@ -1,0 +1,128 @@
+# 🚀 Guía rápida para subir tu proyecto React + Vite a Netlify
+
+Hola! 👋 Soy Mirty y te dejo esta mini guía para que puedas subir tu proyecto hecho con **React + Vite** a **Netlify** sin volverte loco 😅  
+Vamos paso a paso 👇
+
+---
+
+## 🧩 Paso 1 – Tener tu proyecto listo en GitHub
+
+Antes de ir a Netlify, asegurate de:
+- Tener tu proyecto subido a GitHub (con `package.json` incluido).
+- Que funcione bien en local (`npm run dev`).
+- Si usás librerías como **Bootstrap**, asegurate de haber hecho `npm install bootstrap` y subir también el `package-lock.json`.
+
+
+   ![subir proyecto a GitHub](./img/1-0.jpg)
+
+---
+
+## 🌐 Paso 2 – Entrar a Netlify y crear un nuevo sitio
+
+1. Entrá a [https://app.netlify.com/](https://app.netlify.com/).  
+2. Iniciá sesión (podés usar tu cuenta de GitHub).  
+3. Tocá el botón **“Add new project” → “Import an existing project”**.  
+
+
+   ![“Add new project”](./img/1.jpg)
+
+4. Elegí **GitHub** y conectá tu cuenta si es la primera vez.
+
+
+   ![“Elegi github”](./img/2.jpg)
+
+---
+
+## 🗂️ Paso 3 – Elegir el repositorio
+
+1. Buscá el repo donde está tu proyecto React.  
+2. Elegilo y esperá que cargue las opciones.
+
+
+   ![“Elije Repo”](./img/3.jpg)
+
+---
+
+## ⚙️ Paso 4 – Configurar la build
+
+Completá los campos así 👇
+
+Elige el nombre del proyecto, éste debe estar en minusculas y sera la direccion de tu deploy, debajo aparece la direccion del deploy completa.
+
+
+   ![“Completa buils”](./img/4.jpg)
+
+
+Si tu proyecto está directamente en la raíz del repo, dejá el **Base directory** vacío (`/`). En mi caso lo tengo en un directorio de la raíz, y se llama Ejercicio-07, cuidado al poner el nombre debe ser exacto, respetando mayúsculas y minúsculas.
+
+
+   ![“Completa buils”](./img/4-1.jpg)
+
+
+
+ En el **Publish directory** va `dist`, en mi caso, `Ejercicio-07/dist`, porque esta en ése directorio.
+
+
+   ![“Completa buils”](./img/4-2.jpg)
+
+
+El resto dejalo por defecto, así ésta bien... y presiona Deploy.
+
+
+| Campo | Valor |
+|-------|-------|
+| **Base directory** | `Ejercicio-07` *(o el nombre de tu carpeta del proyecto)* |
+| **Build command** | `npm run build` |
+| **Publish directory** | `dist` |
+
+
+---
+
+## 🌱 Paso 5 – Variables de entorno (opcional)
+
+Solo si tenés un archivo `.env` con cosas como:
+VITE_API_URL=https://tuapi.com
+
+Tenés que ir a **Site settings → Environment variables** y agregarlas igual que en tu `.env`.
+
+---
+
+## 🚀 Paso 6 – Deploy!
+
+
+  ![“Deploy”](./img/4-3.jpg)
+
+
+1. Tocá **Deploy site** 💥  
+2. Esperá un ratito mientras Netlify instala todo y hace el build.  
+3. Si todo sale bien, te va a mostrar una URL como  
+https://nombre-del-sitio.netlify.app
+
+
+
+---
+
+## 🛠️ Paso 7 – Problemas comunes
+
+| Error | Solución |
+|-------|-----------|
+| ❌ No encuentra “bootstrap/dist/js/bootstrap.bundle.min.js” | Ejecutá `npm install bootstrap` y hacé push de nuevo |
+| ❌ Página en blanco | Revisá que el **Publish directory** sea `dist` |
+| ❌ Variables no cargan | Verificá que empiecen con `VITE_` en el archivo `.env` |
+
+---
+
+## ✨ Paso 8 – (Opcional) Personalizá tu sitio
+
+Podés cambiar el nombre del sitio en **Site settings → Change site name**, por ejemplo:  
+mi-proyecto-react.netlify.app
+
+
+---
+
+## 💬 Y listo!
+
+Tu proyecto React + Vite ya está **online con Netlify** 🎉  
+Si algo no te funciona, no entres en pánico 😅 — revisá los logs de Netlify y vas a ver qué falló.
+
+Hecho con ❤️ por Mirty 🐔✨

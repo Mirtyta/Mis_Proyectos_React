@@ -39,6 +39,7 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
 22. [Código Limpio Modular](./Informacion/codigo-limpio-modular.md)
 23. [React otra historia](./Informacion/React.md)
 24. [Herramientas escenciales vsCode](./Informacion/herramientas-esenciales.md)
+25. [Guía Deploy Netlify](./Informacion/deployEnNetlify)
 
 ---
 
