@@ -1,0 +1,33 @@
+
+.textoJustify {
+  text-align: justify;
+}
+.tituloBanner {
+  font-size: clamp(22px, 5vw, 44px);
+  font-style: bold ;
+  font-weight: 400;
+  text-align: center;  
+}
+.img-oferta {
+  width: 13em;
+}
+/* ============================================
+   PARALLAX DIVIDER ABOUTPAGE.JSX
+   ============================================ */
+.parallax-divider {
+      background-image: url('../assets/parallax.png');
+      background-attachment: fixed;
+      background-position: center;
+      background-size: contain;
+      height: 400px;
+      width: 100%;
+      position: relative;
+    }
+
+    .parallax-divider::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.3);
+    }
+

@@ -79,6 +79,18 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
     * **Descripción:** la aplicación integra ***navegación dinámica, seguridad básica, consumo de API externa y manejo global*** de estado mediante hooks personalizados. *[(ver consigna)](./Ejercicio-07/README.md)*, [Información sobre el ejercicio:](./Ejercicio-07/src/DetalleDelEjercicio.md). ***[(Despliegue Ejercicio 7)](https://ejercicio-07.netlify.app/)***
 
 ---
+* **[Ejercicio-08: Inexistente ](./Ejercicio-08/)**
+    * **Descripción:** **El ejercicio 8 se reemplazo por la presentacion de la pre-entrega [Información sobre el ejercicio:](./Ejercicio-08/Ejercicio-08-No-existe.md).**
+
+---
+* **[Ejercicio-09: Gestión de Carrito de compras, autenticación de usuarios](./Ejercicio-09/)**
+    * **Descripción:** Se realizo todas éstas tareas en el ejercicio N° 7, Remitirse a ése para verlo. *[(ver consigna)](./Ejercicio-09/consignaEjercicio-09.md)*, 
+
+---
+* **[Ejercicio-10: Crear un formulario controlado y Validaciones del Formulario](./Ejercicio-07/)**
+    * **Descripción:** la aplicación integra ***Un formulario acontrolado y validamos campos de la api para nuestro formulario para crud de prodictos, utilizando una api de MockAPI***. *[(ver consigna)](./Ejercicio-10/Consigna.md)*, [Información sobre el ejercicio:](./Ejercicio-10/README.md). ***[(Despliegue Ejercicio 10 prsentado como proyecto final, es igual al ejercicio 7 pero con el agregado del formulario de formulario de CRUD de productos)](#)***
+
+---
 
 ### Cuestionarios
 * **[Todos los Cuestionarios:](./Cuestionarios/)**
@@ -120,12 +132,12 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
 
 ---
 
-* **Cuestionario Clase-12 React:** En Proceso - Aun no subido**
-    * Cuestionario "Clase-12 React - Habilita Clase-13 y Clase-14"
+* **[Cuestionario Clase-12 React:](./Ejercicio-08/Ejercicio-08-No-existe.md)**
+    * Este cuestionario no existe, se reemplazo por la Pre-Entrega - Habilita Clase-13 y Clase-14"
 
 ---
 
-* **Cuestionario Clase-14 React:** En Proceso - Aun no subido**
+* **[Cuestionario Clase-14 React:](./Cuestionarios/Clase-14-React.md)**
     * Cuestionario "Clase-14 React - Habilita Clase-15 y Clase-16"
 
 ---

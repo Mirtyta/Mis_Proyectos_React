@@ -1,0 +1,19 @@
+/* archivo banner.css
+ * Diseño de estilos */
+.banner {
+  width: 100%;
+  height: 200px;
+  padding: 55px;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;  
+}
+.banner h1 {
+  font-weight: 300;
+  text-shadow: 0 0 60px var(--color-fondo);
+}
+.banner p {
+  font-size: 1em;
+  font-weight: 300;
+}
+

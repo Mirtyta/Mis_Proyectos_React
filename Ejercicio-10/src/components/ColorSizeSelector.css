@@ -1,0 +1,53 @@
+
+/* ============================================
+Archivo ColorSizeSelector.css
+  COLORES DISPONIBLES
+   ============================================ */
+
+.color-badge {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+  box-shadow: 1px 1px 15px var(--color-gris);
+  transition: transform 0.2s ease;
+  opacity: 0.8;
+}
+.color-badge.selected {
+  transform: scale(1.3);
+  border: 3px solid #e46109;
+  opacity: 1;
+}
+.color-badge:hover {
+  border: 1px solid #960404;
+  transform: scale(1.3);
+  opacity: 1;
+}
+/* ============================================
+  TAMAÑOS DISPONIBLES
+   ============================================ */
+.size-badge {
+  width: auto;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+  box-shadow: 1px 1px 15px var(--color-gris);
+  background-color: #eee;
+  color: #333;
+  padding: 0 8px 4px 8px;  
+  font-size: 1.2rem;
+  transition: background 0.2s ease;
+}
+.size-badge.selected {
+  background: #000;
+  color: #fff;
+  border: 3px solid #e46109;
+    transform: scale(1.3);
+}
+.size-badge:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #960404;
+}

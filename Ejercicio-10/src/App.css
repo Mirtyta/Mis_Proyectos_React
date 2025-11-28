@@ -1,0 +1,92 @@
+/* =========================
+  app.css - GLOBAL - se aplica a 
+  toda la app, es por eso que 
+  aqui esta el logo para que 
+  tenga acceso a todas las rutas
+   ========================= */
+
+/* Fuente y reset general */
+/* Utilizamos Poppins para el general, y 
+algunos títulos en Kaushan Script por las 
+letras de nuestro logo (Esto es sólo para 
+mi Pre-Entrega, no se corresponde con éste proyecto) */
+
+html{
+  font-size: 14px; 
+  background-color: white;
+}
+body {
+  margin: 0 auto;
+  padding: 0; 
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+#root {
+  border: 15px solid white;
+  border-radius: 47px;
+  overflow: hidden;   /* 🔑 ESTA LÍNEA es la magia */
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+}
+.container {
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+/* ===================================================
+  ICONOS DE FAVORITOS, VER Y CARRITO SOBRE LA IMAGEN
+   =================================================== */
+/* Overlay de íconos en la esquina superior izquierda */
+.icons-overlay {
+  position: absolute;
+  bottom: 25px;
+  left: 70%; 
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.custom-shadow {
+  box-shadow: 0 5px 15px var(--color-fondotr06);
+}
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 20px var(--color-resaltado)); 
+}
+.icono-interactivo {
+  cursor: pointer; /* Esto muestra la 'manito' al pasar el ratón */
+}
+.red:hover{
+  transform: scale(1.2);
+} 
+  /*********************/
+  /* F o o t e r       */
+  /*********************/
+  /*************************************************/
+  /* IMAGEN CARRITO COMPRAS PROMO IF IS EMPTY      */
+  /*************************************************/
+  .cart-image-promo {
+    background-image: url('./assets/asombro.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    background-blend-mode:color-burn;
+  }
+.footer {
+  padding-top: 40px;
+}  
+.logo-luz {
+  filter: drop-shadow( 0 0 40px var(--color-oscuro)); 
+}
+/* Media Query para móvil: apila las columnas */
+@media (max-width: 768px) {
+  .contenido-total {
+  width: 100%;
+  max-width: 100%;  
+  padding: 0;
+}
+}

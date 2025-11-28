@@ -1,0 +1,32 @@
+/*********************/
+/* Paleta de colores */
+/*********************/
+:root {  
+  /* Light */
+  --color-light: rgba(252, 210, 102, 0.3);      /* amarillo cálido */
+  --color-texto-light: rgb(3, 24, 32);      /* azul oscuro */
+
+  --color-light-claro: rgba(255, 228, 158,0.3);     /* beige claro */
+  --color-light-transparente: rgba(240, 232, 206, 0.5);
+
+  /* Dark - Gris Azulado */
+  --color-dark: rgba(6, 5, 7, 0.85);          /* slate-800 */
+  --color-texto-dark: rgb(255, 228, 158);    /* slate-200 */
+  
+  --color-dark1: rgb(28, 30, 33);         /* slate-900 */
+  --color-dark-transparente: rgba(51, 65, 85, 0.3); /* slate-700 con transparencia */
+}
+
+/*********************/
+/* MODESWITCH    */
+/*********************/
+#light {
+  background-color: var(--color-light);
+  color: var(--color-texto-light);
+}
+#dark {
+  background-color: var(--color-dark);
+  color: var(--color-texto-dark);
+}
+/* ALGUNAS VARIACIONES EN LOS MODOS OSCURO Y CLARO SE UTILIZAN OPACIDAD PARA CAMBIAR ALGUNO DE LOS COLORES */
+

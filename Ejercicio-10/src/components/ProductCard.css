@@ -1,0 +1,16 @@
+
+/* ============================================
+   OPCIÓN PARA LISTADOS PEQUEÑOS (SEARCH)
+   ============================================ */
+.search-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); /* normalmente 1 columna */
+  justify-content: center;     /* centra la tarjeta si es solo una */
+  gap: 20px;
+}
+
+.search-grid .product-card {
+  max-width: 350px; /* límite solo para search */
+  width: 100%;
+  margin: 0 auto;
+}

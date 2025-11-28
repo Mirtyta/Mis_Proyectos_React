@@ -1,0 +1,16 @@
+/* // ============================================
+// src/components/Cart.css
+// ============================================ */
+.navbar-dinamica {
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
+  box-shadow: 0 5px 15px var(--color-fondotr06);
+}
+
+.navbar-dinamica.oculta {
+  transform: translateY(-100%);
+}
+
+.navbar-dinamica.visible {
+  transform: translateY(0);
+}

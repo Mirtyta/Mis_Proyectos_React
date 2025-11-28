@@ -1,0 +1,22 @@
+/* ============================================
+// src/pages/ProductDetailPage.css
+// Estilos de la pagina ProductDetailsPage.jsx
+// ============================================ */
+
+/* A G R E G A D O */
+
+    .quantity-control { display: flex; align-items: center; background: #f0f0f0; border-radius: 10px; width: fit-content; padding: 0.25rem 0.5rem; margin-bottom: 1rem; }
+    .quantity-control span { cursor: pointer; padding: 0 0.5rem; font-weight: 600; user-select: none; }
+    .size-option, .color-option { display: inline-block; margin-right: 0.5rem; margin-bottom: 0.5rem; padding: 0.25rem 0.5rem; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; }
+    .color-option { width: 25px; height: 25px; padding: 0; border-radius: 50%; display: inline-block; vertical-align: middle; }
+    .reviews { font-size: 0.9rem; margin-bottom: 0.5rem; color: #555; }
+    .btn-buy { background-color: #ff6600; color: #fff; font-weight: 600; width: 100%; }
+    .product-info p { font-size: 0.9rem; color: #555; }
+    .product-price {color: #212121;  }
+    .stock {margin-top: -15px; color: green;}
+    .product-ok{ margin-top: -30px;}
+ 
+
+
+
+
