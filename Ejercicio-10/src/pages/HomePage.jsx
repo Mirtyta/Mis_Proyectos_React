@@ -22,9 +22,9 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <Container id={contextTheme}>       
+    <Container id={contextTheme} className=' my-4 my-md-5 '>       
       <Banner title="Home" description={'Zapatillas-Gorras y Accesorios'} />
-          <Row className="fondo-page align-items-center p-5">
+          <Row className="p-2 p-md-5">
             <Col md={6} className=' text-center'>
               <div className="d-flex justify-content-center align-items-center flex-wrap">
                 <h3 className='tituloBanner mb-0'>¡Bienvenido a </h3>

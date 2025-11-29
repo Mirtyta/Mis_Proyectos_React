@@ -14,9 +14,9 @@ const About = () => {
 // contexto para Theme
   const {contextTheme} = useThemeContext()
   return (
-        <Container className='p-5' id={contextTheme} >
+        <Container className=' my-4 my-md-5' id={contextTheme} >
           <Banner title="Acerca" description={'Conoce más sobre NosotrosS'} />
-          <Row className="align-items-center p-5">
+          <Row className="p-2 p-md-5">
             <Col md={6}>
               <div>
                 <h3 className='tituloBanner mb-0'>El Origen de ZapaShop: </h3>
@@ -55,7 +55,7 @@ const About = () => {
           </Row>
            {/* <!-- Franja parallax --> */}
           <div className="parallax-divider"></div>
-          <Row className="align-items-center p-5">
+          <Row className=" p-2 p-md-5">
             <Col md={6}>
               <img 
                 src={Marca1} 

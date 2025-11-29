@@ -26,6 +26,7 @@ export default function Navigation() {
         bg="primary"
         data-bs-theme="dark"
         sticky="top"
+        className="px-2 px-md-4"
       >
         <Container>
           <Navbar.Brand href="#" className="fw-bolder fs-5">

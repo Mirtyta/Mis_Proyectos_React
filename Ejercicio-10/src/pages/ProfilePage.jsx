@@ -63,11 +63,11 @@ export default function ProfilePage() {
 };
 
   return (
-    <Container id={contextTheme} className="p-3">
+    <Container id={contextTheme} className="p-1 p-md-3">
       <Banner title="Perfil Usuario" description={'Ver última Compra'} />
-            <p className=" text-center pt-4">Nota: aquí podrás ver el historial de tus compras</p>
+            <p className=" text-center">Nota: aquí podrás ver el historial de tus compras</p>
 
-            <div className="row px-5 pb-5">
+            <div className="row px-2 px-md-5 pb-5">
                 <div className=" col-md-4 p-3">
                     <div className="card" id={contextTheme} >
 

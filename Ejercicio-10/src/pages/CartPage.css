@@ -6,8 +6,6 @@
   display: flex;
   justify-items: space-between;
   gap: 10px; /* Espacio entre las columnas */
-  margin-top: 40px;
-  margin-bottom: 40px;
   flex-direction: row;
 }
 /* Detalle de producto */
@@ -30,7 +28,6 @@
 .totals-column {
   width: 40%; /* Columna de totales será más estrecha (por ejemplo, 40% del espacio) */
   min-width: 350px;
-  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px var(--color-claro);
   height: fit-content; /* Para que no ocupe todo el alto si el contenido es corto */

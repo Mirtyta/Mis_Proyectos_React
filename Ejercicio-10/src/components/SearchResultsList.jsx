@@ -14,7 +14,7 @@ export default function SearchResultsList({ resultados, query }) {
     // contexto para Theme
   const {contextTheme} = useThemeContext()
     return (
-        <Container id={contextTheme}>
+        <Container id={contextTheme} className=" mb-4">
             
             {/* Banner con título dinámico */}
             <Banner
@@ -28,7 +28,7 @@ export default function SearchResultsList({ resultados, query }) {
             
             {/* 💡 Row para la grilla. align-items-stretch para que todas las tarjetas sean iguales 
                 y g-4 para un buen espaciado entre ellas. */}
-            <Row className="align-items-stretch d-flex g-4 p-5"> 
+            <Row className="align-items-stretch d-flex g-4 p-2 p-md-5"> 
                 {resultados.length > 0 ? (
                     resultados.map((producto) => (
                         <Col

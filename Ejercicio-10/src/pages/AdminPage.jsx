@@ -216,7 +216,7 @@ export default function AdminPage() {
   // ========================================
 
   return (
-    <Container id={contextTheme} className=" mt-5">
+    <Container id={contextTheme} className=" mt-2 mt-md-5">
       <Banner title="Administracion" description={'Gestión de productos'} />
 
       {/* Indicadores de estado */}
@@ -255,6 +255,7 @@ export default function AdminPage() {
           <div className="p-3 bg-secondary">
             <p>
               Total de productos: <strong>{productos.length}</strong>
+              <br /> <small> 👉 ↔ Deslizá la tabla para ver más columnas en pantallas pequeñas.</small>
             </p>
           </div>
 

@@ -66,11 +66,11 @@ export default function HeaderTop() {
 
   return(
     // <!-- Header Top -->
-    <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3 position-relative p-5" id={contextTheme}>
+    <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3 position-relative p-2 p-md-5" id={contextTheme}>
 
       {/* <!-- Marca --> */}
       <div className="logo flex-shrink-0 mx-lg-3">
-        <h3 className="fw-bolder brand">ZapaShop</h3>
+        <h3 className="fw-bolder brand pt-2">ZapaShop</h3>
       </div>
 
       {/* <!-- Buscador + Lupa --> */}
