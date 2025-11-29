@@ -69,9 +69,9 @@ export default function LoginPage() {
     }
 
     if (username.toLowerCase() === "admin" && password === "admin1234") {
-      sessionStorage.setItem("auth", "true");
-      sessionStorage.setItem("role", "admin");
-      sessionStorage.setItem("username", username);
+      localStorage.setItem("auth", "true");
+      localStorage.setItem("role", "admin");
+      localStorage.setItem("username", username);
       
       Swal.fire({
         icon: 'success',
@@ -82,9 +82,9 @@ export default function LoginPage() {
       return;
     }
 
-    sessionStorage.setItem("auth", "true");
-    sessionStorage.setItem("role", "user");
-    sessionStorage.setItem("username", username);
+    localStorage.setItem("auth", "true");
+    localStorage.setItem("role", "user");
+    localStorage.setItem("username", username);
     
       Swal.fire({
         icon: 'success',

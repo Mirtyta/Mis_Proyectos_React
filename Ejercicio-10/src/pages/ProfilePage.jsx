@@ -23,14 +23,15 @@ export default function ProfilePage() {
         emailAmostrar = lastCheckout.email;
     }
    // Recuperamos estado de autenticación y username, y su rol desde sessionStorage
-  const username = sessionStorage.getItem("username");
-  const role = sessionStorage.getItem("role");
+  const username = localStorage.getItem("username");
+  const role = localStorage.getItem("role");
 
   const navigate = useNavigate();
 
   useEffect(() => {
      // Traer último pago simulado
-    const pago = sessionStorage.getItem("ultimoPago");    
+    const user = localStorage.getItem("username");
+    const pago = localStorage.getItem(`ultimoPago_${user}`);
     // eslint-disable-next-line react-hooks/set-state-in-effect
     if (pago) setLastCheckout(JSON.parse(pago));
   }, []);
@@ -48,9 +49,9 @@ export default function ProfilePage() {
     cancelButtonText: 'Cancelar'
   }).then((result) => {
     if (result.isConfirmed) {
-      sessionStorage.removeItem("auth");
-      sessionStorage.removeItem("role");
-      sessionStorage.removeItem("username");
+      localStorage.removeItem("auth");
+      localStorage.removeItem("role");
+      localStorage.removeItem("username");
       Swal.fire(
         'Sesión cerrada',
         'Has cerrado sesión correctamente',

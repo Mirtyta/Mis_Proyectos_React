@@ -12,9 +12,9 @@ export default function Navigation() {
 
   const { cartCount } = useCartContext();
 
-  const isAuth = sessionStorage.getItem("auth") === "true";
-  const username = sessionStorage.getItem("username");
-  const role = sessionStorage.getItem("role");
+  const isAuth = localStorage.getItem("auth") === "true";
+  const username = localStorage.getItem("username");
+  const role = localStorage.getItem("role");
 
   return (
     <>

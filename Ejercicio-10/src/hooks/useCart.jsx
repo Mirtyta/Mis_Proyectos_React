@@ -17,13 +17,14 @@ export function useCart() {
   // 💳 Último pago
   // -------------------------------
   const [lastCheckout, setLastCheckout] = useState(() => {
-    const saved = sessionStorage.getItem("ultimoPago");
+    const saved = localStorage.getItem("ultimoPago");
     return saved ? JSON.parse(saved) : null;
   });
 
   const saveLastCheckout = (pago) => {
     setLastCheckout(pago);
-    sessionStorage.setItem("ultimoPago", JSON.stringify(pago));
+    const user = localStorage.getItem("username"); // o email si lo tenés
+    localStorage.setItem(`ultimoPago_${user}`, JSON.stringify(pago)); 
   };
 
   // -------------------------------

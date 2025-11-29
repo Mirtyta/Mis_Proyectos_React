@@ -9,9 +9,9 @@ import { Navigate, useLocation } from "react-router-dom";
 
 export default function ProtectedRoute({ children, requiredRole }) {
   // auth: true/false almacenado en sessionStorage (simulación simple), sessionStorage borra los datos al cerrar la app
-  const auth = sessionStorage.getItem("auth") === "true";
+  const auth = localStorage.getItem("auth") === "true";
   // role: 'admin' o 'user'
-  const role = sessionStorage.getItem("role");
+  const role = localStorage.getItem("role");
   // ubicacion actual (para devolver al usuario luego del login)
   const location = useLocation();
 

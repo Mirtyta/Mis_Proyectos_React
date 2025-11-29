@@ -23,7 +23,7 @@ export default function HeaderTop() {
 
   // isAuth y username los guardamos/recuperamos desde sessionStorage
   // (simulación simple de autenticación para el ejercicio)
-  const isAuth = sessionStorage.getItem("auth") === "true";
+  const isAuth = localStorage.getItem("auth") === "true";
 
   const navigate = useNavigate();
   const [query, setQuery] = useState("");
@@ -50,9 +50,9 @@ export default function HeaderTop() {
     cancelButtonText: 'Cancelar'
   }).then((result) => {
     if (result.isConfirmed) {
-      sessionStorage.removeItem("auth");
-      sessionStorage.removeItem("role");
-      sessionStorage.removeItem("username");
+      localStorage.removeItem("auth");
+      localStorage.removeItem("role");
+      localStorage.removeItem("username");
       Swal.fire(
         'Sesión cerrada',
         'Has cerrado sesión correctamente',
