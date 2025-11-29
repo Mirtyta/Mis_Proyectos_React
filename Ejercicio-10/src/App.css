@@ -32,6 +32,10 @@ body {
   width: 100%;
   min-height: 100vh;
 }
+/* Para todos los elementos */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 .container {
   margin: 0 auto !important;
   padding: 0 !important;

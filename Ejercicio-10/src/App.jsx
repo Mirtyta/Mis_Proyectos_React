@@ -18,6 +18,8 @@ import { ProductsProvider } from './context/ProductsContext';
 
 // Context del carrito 
 import { CartProvider } from './context/CartProvider';
+// contexto Theme dark/light
+import { useThemeContext } from './context/ThemeContext';
 
 // Componentes Globales
 import HeaderTop from './components/HeaderTop'
@@ -41,7 +43,6 @@ import LoginPage from "./pages/LoginPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import AdminPage from "./pages/AdminPage";
 import ProfilePage from "./pages/ProfilePage"
-import { useThemeContext } from './context/ThemeContext';
 
 export default function App() {
     const {contextTheme} = useThemeContext()

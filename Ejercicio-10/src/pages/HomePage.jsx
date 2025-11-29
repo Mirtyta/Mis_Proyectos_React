@@ -27,13 +27,13 @@ const Home = () => {
           <Row className="p-2 p-md-5">
             <Col md={6} className=' text-center'>
               <div className="d-flex justify-content-center align-items-center flex-wrap">
-                <h3 className='tituloBanner mb-0'>¡Bienvenido a </h3>
+                <h3 className='tituloBanner mb-0 fw-light'>¡Bienvenido a </h3>
                 <img 
                 src={Marca2} 
                 alt='Logo de ZapaShop'
                 className='me-3 img-oferta' 
                 />
-                <h3 className='tituloBanner me-0'>!</h3>
+                <h3 className='tituloBanner m-0 fw-light'>!</h3>
               </div>                  
               <br />
               <p className='textoJustify'>¡No te estreses más! En ZapaShop 

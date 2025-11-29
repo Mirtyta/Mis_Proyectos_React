@@ -59,7 +59,7 @@ const Contact = () => {
         {/* ============================================ */}
         <Col xs={12} md={5}>
           <div className="rounded-4 p-4 h-100" id={contextTheme}>
-            <h3 className="d-flex align-items-center gap-3 py-3">
+            <h3 className="d-flex align-items-center gap-3 fw-light">
               <img
                 src={imagelogo}
                 className="logo rounded logo-pequeno"
@@ -106,7 +106,7 @@ const Contact = () => {
         {/* ============================================ */}
         <Col xs={12} md={5}>
           <div className="rounded-4 p-4 h-100" id={contextTheme}>
-            <h3 className="py-3 text-center">✉ Contacto</h3>
+            <h3 className="text-center fw-light">✉ Contacto</h3>
             <hr />
 
             <Form onSubmit={handleEnviar}>

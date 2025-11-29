@@ -40,6 +40,7 @@ Para mantener un orden claro y modular, cada ejercicio se encuentra en una **car
 23. [React otra historia](./Informacion/React.md)
 24. [Herramientas escenciales vsCode](./Informacion/herramientas-esenciales.md)
 25. [Guía Deploy Netlify](./Informacion/deployEnNetlify)
+26. [Igualar Columnas con Bootstrap React](./Informacion/igualarAlturaRowsColBootstrap.md)
 
 ---
 

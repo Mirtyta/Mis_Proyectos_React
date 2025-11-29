@@ -10,10 +10,9 @@ Vamos paso a paso 👇
 Antes de ir a Netlify, asegurate de:
 - Tener tu proyecto subido a GitHub (con `package.json` incluido).
 - Que funcione bien en local (`npm run dev`).
-- Si usás librerías como **Bootstrap**, asegurate de haber hecho `npm install bootstrap` y subir también el `package-lock.json`.
+- Si usás librerías como **Bootstrap**, asegurate de haber hecho `npm install bootstrap` y subir también el `package-lock.json`.  
 
-
-   ![subir proyecto a GitHub](./img/1-0.jpg)
+<img src="./img/1-0.jpg" alt="subir proyecto a GitHub" style="display:block; margin:20px 0;" />
 
 ---
 
@@ -23,13 +22,14 @@ Antes de ir a Netlify, asegurate de:
 2. Iniciá sesión (podés usar tu cuenta de GitHub).  
 3. Tocá el botón **“Add new project” → “Import an existing project”**.  
 
+<img src="./img/1.jpg" alt="subir proyecto a GitHub" style="display:block; margin:20px 0;" />
 
-   ![“Add new project”](./img/1.jpg)
+---
+
 
 4. Elegí **GitHub** y conectá tu cuenta si es la primera vez.
 
-
-   ![“Elegi github”](./img/2.jpg)
+<img src="./img/2.jpg" alt="subir proyecto a GitHub" style="display:block; margin:20px 0;" />
 
 ---
 
@@ -38,8 +38,7 @@ Antes de ir a Netlify, asegurate de:
 1. Buscá el repo donde está tu proyecto React.  
 2. Elegilo y esperá que cargue las opciones.
 
-
-   ![“Elije Repo”](./img/3.jpg)
+<img src="./img/3.jpg" alt="subir proyecto a GitHub" style="display:block; margin:20px 0;" />
 
 ---
 
@@ -49,22 +48,21 @@ Completá los campos así 👇
 
 Elige el nombre del proyecto, éste debe estar en minusculas y sera la direccion de tu deploy, debajo aparece la direccion del deploy completa.
 
+<img src="./img/4.jpg" alt="subir proyecto a GitHub" style="display:block; margin:20px 0;" />
 
-   ![“Completa buils”](./img/4.jpg)
-
+---
 
 Si tu proyecto está directamente en la raíz del repo, dejá el **Base directory** vacío (`/`). En mi caso lo tengo en un directorio de la raíz, y se llama Ejercicio-07, cuidado al poner el nombre debe ser exacto, respetando mayúsculas y minúsculas.
 
+<img src="./img/4-1.jpg" alt="subir proyecto a GitHub" style="display:block; margin:20px 0;" />
 
-   ![“Completa buils”](./img/4-1.jpg)
-
-
+---
 
  En el **Publish directory** va `dist`, en mi caso, `Ejercicio-07/dist`, porque esta en ése directorio.
 
+<img src="./img/4-2.jpg" alt="subir proyecto a GitHub" style="display:block; margin:20px 0;" />
 
-   ![“Completa buils”](./img/4-2.jpg)
-
+---
 
 El resto dejalo por defecto, así ésta bien... y presiona Deploy.
 
@@ -89,9 +87,9 @@ Tenés que ir a **Site settings → Environment variables** y agregarlas igual q
 
 ## 🚀 Paso 6 – Deploy!
 
+<img src="./img/4-3.jpg" alt="subir proyecto a GitHub" style="display:block; margin:20px 0;" />
 
-  ![“Deploy”](./img/4-3.jpg)
-
+---
 
 1. Tocá **Deploy site** 💥  
 2. Esperá un ratito mientras Netlify instala todo y hace el build.  

@@ -3,7 +3,7 @@
 // ============================================
 
 import { useNavigate } from "react-router-dom";
-import { useCartContext } from "../hooks/useCarritoContext";
+import { useCartContext } from "../hooks/useCartContext";
 import Swal from "sweetalert2";
 
 /**

@@ -8,7 +8,7 @@ const Banner = ({ title, description }) => {
     return(
         <div className="fondo-light-tr banner  p-2 p-md-5">
             {/* 2. Usa las variables de las props en lugar del texto fijo */}
-            <h1>{title}</h1> 
+            <h1 className=" fw-light">{title}</h1> 
             <p>{description}</p> 
         </div>
     );

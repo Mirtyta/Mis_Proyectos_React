@@ -1,8 +1,4 @@
-// ============================================
-// src/hooks/useCart.jsx
-// ============================================
-
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 /**
  * Hook personalizado para manejar la lógica del carrito
@@ -11,7 +7,11 @@ export function useCart() {
   // -------------------------------
   // 🛒 Estado del carrito
   // -------------------------------
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+    // Cargar carrito desde localStorage
+    const saved = localStorage.getItem("cart");
+    return saved ? JSON.parse(saved) : [];
+  });
 
   // -------------------------------
   // 💳 Último pago
@@ -23,14 +23,13 @@ export function useCart() {
 
   const saveLastCheckout = (pago) => {
     setLastCheckout(pago);
-    const user = localStorage.getItem("username"); // o email si lo tenés
+    const user = localStorage.getItem("username") || "guest";
     localStorage.setItem(`ultimoPago_${user}`, JSON.stringify(pago)); 
   };
 
   // -------------------------------
   // 📦 Funciones del carrito
   // -------------------------------
-
   const addToCart = (producto, cantidad = 1) => {
     const existing = cart.find(item =>
       item.id === producto.id &&
@@ -66,21 +65,23 @@ export function useCart() {
   };
 
   // -------------------------------
+  // 🔄 Guardar cart en localStorage cada vez que cambie
+  // -------------------------------
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
+  // -------------------------------
   // 🔄 Retornamos estado y funciones
   // -------------------------------
   return {
-    // Estado
     cart,
     lastCheckout,
-    
-    // Funciones
     addToCart,
     removeFromCart,
     updateQuantity,
     clearCart,
     saveLastCheckout,
-    
-    // Datos derivados
     cartCount: cart.reduce((total, item) => total + item.quantity, 0),
     itemsCount: cart.length,
     isEmpty: cart.length === 0

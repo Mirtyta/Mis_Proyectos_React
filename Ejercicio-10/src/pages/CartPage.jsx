@@ -6,7 +6,7 @@
 // ============================================
 
 import { useNavigate } from "react-router-dom";
-import { useCartContext } from "../hooks/useCarritoContext";
+import { useCartContext } from "../hooks/useCartContext";
 import { useProducts } from "../context/ProductsContext";
 import { useCart } from "../hooks/useCart";
 import { useThemeContext } from "../context/ThemeContext";
@@ -53,11 +53,11 @@ export default function Carrito() {
         />
 
         <div className="cart-image-promo bg-secondary mx-2 mx-md-5 p-2 p-md-5 rounded-5 bg-body-secondary">
-          <h5 className="badge fs-3 fw-bolder bg-success rounded-4">¡Nuevos!</h5>
+          <h5 className="badge fs-3 fw-light bg-success rounded-4">¡Nuevos!</h5>
           <h5 className="ms-4 fs-5 fw-bolder text-danger fst-italic">
             Últimos lanzamientos
           </h5>
-          <h5 className="ms-4 fs-3 fst-italic text-primary">
+          <h5 className="ms-4 fs-3 fst-italic fw-light text-primary">
             Productos que podrían gustarte
           </h5>
         </div>
@@ -103,19 +103,21 @@ export default function Carrito() {
       {/* ============================================ */}
       {/* 🧱 FILA PRINCIPAL: TABLA + RESUMEN */}
       {/* ============================================ */}
-      <Row className="g-4 my-2 my-md-5 px-2 px-md-5">
+      <Row className="g-4 px-2 px-md-5 d-flex align-items-stretch">
 
         {/* 🧩 COLUMNA IZQUIERDA: TABLA DE PRODUCTOS */}
-        <Col xs={12} md={7} className="order-2 order-md-1">
-         <br /> <small> 👉 ↔ Deslizá la tabla para ver más columnas en pantallas pequeñas.</small>
-          <div className="p-2 p-md-5 rounded-4" id={contextTheme}>
+        <Col xs={12} md={7} className="order-2 order-md-1 d-flex flex-column">
+         
+          <div className=" p-2 p-md-4 rounded-4 flex-grow-1 h-100" id={contextTheme}>
+            <h3 className="text-center fw-light">Detalle del Carrito</h3>
+            <br /> <small> 👉 ↔ Deslizá la tabla para ver más columnas en pantallas pequeñas.</small>
             <Table
               size="sm"
               striped
               bordered
               hover
               responsive
-              className="table-light py-2 px-md-4 text-primary"
+              className="table-light text-primary"
             >
               <thead>
                 <tr className="table-dark text-center">
@@ -203,9 +205,9 @@ export default function Carrito() {
         {/* ============================================ */}
         {/* 💵 COLUMNA DERECHA: RESUMEN */}
         {/* ============================================ */}
-        <Col xs={12} md={5} className="order-1 order-md-2">
-          <div className="p-2 p-md-5 rounded-4" id={contextTheme}>
-            <h3 className="py-3 text-center">Resumen del Pedido</h3>
+        <Col xs={12} md={5} className="order-1 order-md-2 d-flex flex-column">
+          <div className="  p-2 p-md-4 rounded-4 flex-grow-1 h-100" id={contextTheme}>
+            <h3 className="text-center fw-light">Resumen del Pedido</h3>
 
             <Table
               size="sm"
@@ -213,7 +215,7 @@ export default function Carrito() {
               bordered
               hover
               responsive
-              className="table-light py-2 px-md-4 text-primary"
+              className="table-light text-primary"
             >
               <thead className="fondo-resumen text-primary">
                 <tr className="table-light text-start">

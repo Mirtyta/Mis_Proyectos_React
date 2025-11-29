@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useCartContext } from "../hooks/useCarritoContext";
+import { useCartContext } from "../hooks/useCartContext";
 import { Container, Nav, Navbar, Badge } from 'react-bootstrap'
 import { Link, useLocation } from 'react-router-dom';
 import ModeSwitch from "./ModeSwitch";

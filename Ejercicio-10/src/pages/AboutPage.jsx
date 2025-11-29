@@ -19,7 +19,7 @@ const About = () => {
           <Row className="p-2 p-md-5">
             <Col md={6}>
               <div>
-                <h3 className='tituloBanner mb-0'>El Origen de ZapaShop: </h3>
+                <h3 className='tituloBanner mb-0 fw-light'>El Origen de ZapaShop: </h3>
               </div>                  
               <br />
               <p className='textoJustify'>
@@ -64,7 +64,7 @@ const About = () => {
             </Col>
             <Col md={6}>
               <div className="d-flex justify-content-center align-items-center flex-wrap">
-                <h3 className='tituloBanner mb-0'>Con esfuerzo construimos nuestra tienda digital </h3>
+                <h3 className='tituloBanner mb-0 fw-light'>Con esfuerzo construimos nuestra tienda digital </h3>
               </div>                  
               <br />
               <p className='textoJustify'>Como todo gran proyecto, ZapaShop comenzó con una idea diminuta, casi como una semilla de zapallo en un huerto de sueños. No fue un camino fácil; cada paso, cada línea de código y cada selección de producto requirieron dedicación, madrugadas de trabajo y un espíritu inquebrantable. Construimos este espacio digital con la misma meticulosidad con la que se diseña un calzado perfecto: pensando en cada detalle, en la comodidad y en la experiencia de quien lo va a usar.

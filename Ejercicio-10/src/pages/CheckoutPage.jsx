@@ -5,7 +5,7 @@
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useCartContext } from "../hooks/useCarritoContext";
+import { useCartContext } from "../hooks/useCartContext";
 import { useCart } from "../hooks/useCart";
 
 import { formatearPrecio, calcularResumenCarrito } from "../utils/calculos";

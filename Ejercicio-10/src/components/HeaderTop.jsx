@@ -7,7 +7,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useThemeContext } from "../context/ThemeContext";
-import { useCartContext } from "../hooks/useCarritoContext";
+import { useCartContext } from "../hooks/useCartContext";
 
 import { Link } from "react-router-dom";
 import { Badge } from 'react-bootstrap';

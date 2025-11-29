@@ -1,5 +1,5 @@
 // ============================================
-// src/hooks/useCarritoContext.jsx
+// src/hooks/useCartContext.jsx
 // ============================================
 
 import { useContext } from 'react';

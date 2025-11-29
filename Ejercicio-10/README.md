@@ -179,7 +179,7 @@ moderna.
 │    └── ThemeContext.jsx # Contexto del modo Dark/Light
 │
 ├── hooks/ # Custom Hooks
-│    ├── useCarritoContext.jsx # Acceso al contexto del carrito
+│    ├── useCartContext.jsx # Acceso al contexto del carrito
 │    ├── useCart.jsx # Lógica de manejo del carrito
 │    └── useFetchProducts.jsx # Fetch completo a MockAPI (CRUD)
 │
