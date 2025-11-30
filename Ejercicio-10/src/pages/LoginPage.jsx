@@ -7,6 +7,7 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useRef } from "react";
 import { useThemeContext } from "../context/ThemeContext";
+import { useCartContext } from "../hooks/useCartContext"; 
 
 
 import Banner from "../components/Banner";
@@ -20,6 +21,7 @@ import userImg from "../assets/user.png";      // mirando al usuario
 import passImg from "../assets/password.png";  // mirando hacia otro lado
 
 export default function LoginPage() {
+  const { loadUserCart } = useCartContext(); // 🆕 Obtener función
   const {contextTheme} = useThemeContext()
   const navigate = useNavigate();
   const location = useLocation();
@@ -68,34 +70,54 @@ export default function LoginPage() {
       return;
     }
 
-    if (username.toLowerCase() === "admin" && password === "admin1234") {
-      localStorage.setItem("auth", "true");
-      localStorage.setItem("role", "admin");
-      localStorage.setItem("username", username);
-      
-      Swal.fire({
-        icon: 'success',
-        title: '¡Bienvenido!',
-        text: `Estas Loguedo!, ${username}!`
-      });
-      navigate("/admin");
-      return;
-    }
+    
+    if (username.toLowerCase() === "admin" && password === "Admin@2025!") {
+        localStorage.setItem("auth", "true");
+        localStorage.setItem("role", "admin");
+        localStorage.setItem("username", username);
+        
+        loadUserCart(); // 🆕 CARGAR CARRITO DEL ADMIN
+        
+        Swal.fire({
+          icon: 'success',
+          title: '¡Bienvenido Administrador!!!',
+          text: `Estas Loguedo!, ${username}!`
+        });
+        navigate("/admin");
+        return;
+      }
+
+        // 🔍 Buscar usuario en localStorage
+    const users = JSON.parse(localStorage.getItem("users") || "[]");
+    const foundUser = users.find(u => u.username === username);
+
+      if (!foundUser) {
+        setError("Usuario no existe, por favor registrate.");
+        return;
+      }
+
+      // Validar password
+      if (foundUser.password !== password) {
+        setError("Contraseña incorrecta.");
+        return;
+      }
 
     localStorage.setItem("auth", "true");
-    localStorage.setItem("role", "user");
-    localStorage.setItem("username", username);
+    localStorage.setItem("role", foundUser.role || "user");
+    localStorage.setItem("username", foundUser.username);
+
+    loadUserCart(); // 🆕 CARGAR CARRITO DEL USUARIO
     
       Swal.fire({
         icon: 'success',
-        title: '¡Bienvenido!',
-        text: `${username}!, ya puedes hacer tu checkout!`
+        title: `¡Bienvenido ${foundUser.username}!`,
+        text: `${username}!, Ya podés cargar tu carrito!`
       });
     navigate(redirectPath);
   };
 
   return (
-    <Container className="py-5" id={contextTheme}>
+    <Container className="py-5">
       <Banner title="Login" description="Ingreso o nueva cuenta" />
       <h2 className="mb-4 text-center">Iniciar sesión</h2>
 
@@ -111,8 +133,8 @@ export default function LoginPage() {
         </div>
 
         {/* Formulario */}
-        <form onSubmit={handleLogin} className="login-form-right" style={{ maxWidth: 600 }}>
-          <div className="mb-3">
+        <form onSubmit={handleLogin}  id={contextTheme} className="login-form-right py-2 py-md-5" style={{ maxWidth: 600 }}>
+          <div className="mb-3 px-2 px-md-5">
             <input
               type="text"
               id="usuario"
@@ -130,7 +152,7 @@ export default function LoginPage() {
             />
           </div>
 
-          <div className="mb-3">
+          <div className="mb-3 px-2 px-md-5">
             <input
               type="password"
               id="contraseña"
@@ -147,17 +169,22 @@ export default function LoginPage() {
               required
             />
           </div>
-
-          <button type="submit" className="btn btn-primary w-100">
+          <div className="text-center">
+          <button type="submit" className="btn btn-primary w-50">
             Entrar
           </button>
+          </div>
 
           {error && <div className="alert alert-danger mt-3">{error}</div>}
 
-          <p className="mt-3 text-muted small">
-            Nota: para acceder como admin usa usuario <strong>admin</strong> y contraseña <strong>admin1234</strong>.
+          <p className="mt-3 px-2 px-md-5 fw-light">
+            Nota: para acceder como admin usa usuario <strong>admin</strong> y contraseña <strong>Admin@2025!</strong>.
+          </p>
+           <p className="mt-3 text-center">
+            ¿No tiene cuenta? <button className="btn btn-primary fw-bolder" onClick={() => navigate("/register")}>  <i className="bi bi-person-add fs-5"></i> Regístrate aquí</button>
           </p>
         </form>
+         
       </div>
     </Container>
   );

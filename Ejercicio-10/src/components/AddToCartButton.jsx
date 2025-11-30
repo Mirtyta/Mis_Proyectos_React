@@ -35,6 +35,8 @@ export default function AddToCartButton({
 
   const { addToCart, cart} = useCartContext();
   const navigate = useNavigate();
+
+
 // ✅ Detecta si el producto ya está en el carrito (por ID)
   const isInCart = Array.isArray(cart) && cart.some(
     (item) => String(item.id) === String(producto.id)
@@ -52,6 +54,26 @@ export default function AddToCartButton({
    */
   const handleAdd = (e) => {
     e.stopPropagation(); // evita conflictos con otros onClick
+
+  // 1️⃣ Validación login
+   // ⚠️ Si no hay usuario → redirigir a login/register
+  // 🔐 Validar si está logueado
+  const auth = localStorage.getItem("auth") === "true";
+  if (!auth) {
+    Swal.fire({
+      icon: "info",
+      title: "Debes iniciar sesión",
+      text: "Para agregar productos al carrito, inicia sesión o regístrate.",
+      showCancelButton: true,
+      confirmButtonText: "Ir a Login",
+      cancelButtonText: "Cancelar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        navigate("/login");
+      }
+    });
+    return;
+  }
 
     // 🧩 Validaciones previas
     if (

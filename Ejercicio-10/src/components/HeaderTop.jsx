@@ -16,7 +16,7 @@ import './HeaderTop.css'
 
 export default function HeaderTop() {
   // Contador de items en el carrito (desde context)
-  const { cartCount} = useCartContext();
+  const { cartCount, clearCartInMemory } = useCartContext(); // 🆕 Importa clearCartInMemory
 
   // contexto para Theme
   const {contextTheme} = useThemeContext()
@@ -50,14 +50,20 @@ export default function HeaderTop() {
     cancelButtonText: 'Cancelar'
   }).then((result) => {
     if (result.isConfirmed) {
+       // 🧹 LIMPIAR SOLO EL CARRITO EN MEMORIA (no el localStorage)
+      clearCartInMemory();
+      
+      // Limpiar datos de sesión
       localStorage.removeItem("auth");
       localStorage.removeItem("role");
       localStorage.removeItem("username");
+
       Swal.fire(
         'Sesión cerrada',
         'Has cerrado sesión correctamente',
         'success'
       );
+      
       navigate("/");
     }
   });

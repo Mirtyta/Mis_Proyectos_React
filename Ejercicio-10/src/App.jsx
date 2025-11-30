@@ -40,6 +40,7 @@ import ProductsPage from './pages/ProductsPage';
 import ContactPage from './pages/ContactPage';
 import CartPage from './pages/CartPage';
 import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage"
 import CheckoutPage from "./pages/CheckoutPage";
 import AdminPage from "./pages/AdminPage";
 import ProfilePage from "./pages/ProfilePage"
@@ -110,16 +111,25 @@ export default function App() {
 
                 {/* Otras rutas que no usan productos */}
                 <Route path="/contacto" element={<ContactPage />} />            
-                <Route path="/carrito" element={<CartPage />} />
+
                 <Route path="/buscar" element={<SearchResultsPage />} />
                 <Route path="/about" element={<AboutPage />} />
 
-                {/* Página de login */}
+                {/* Página de login/Register */}
                 <Route path="/login" element={<LoginPage />} />
+                <Route path="/register" element={<RegisterPage />} />
 
                 {/* ========================================
                     🔒 RUTAS PROTEGIDAS
                     ======================================== */}
+                <Route 
+                path="/carrito" 
+                element={
+                  <ProtectedRoute>
+                    <CartPage />
+                  </ProtectedRoute>
+                } 
+                />
                 
                 {/* Checkout: requiere solo estar autenticado */}
                 <Route
